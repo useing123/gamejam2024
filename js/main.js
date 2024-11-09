@@ -647,9 +647,9 @@ dateFourth.addEventListener('click', ()=>{
 let Lang = document.querySelector('.lang');
 let LangPanel = document.querySelector('.lang_panel');
 
-Lang.addEventListener('click', () => {
-    LangPanel.classList.toggle('lang_panel_on');
-});
+//Lang.addEventListener('click', () => {
+  //  LangPanel.classList.toggle('lang_panel_on');
+//});
 
 //Form Info Panel
 let FormInfo = document.querySelector('.form_info_win');
