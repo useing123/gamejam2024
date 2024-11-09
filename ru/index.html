@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" Content="the Hub Web Studio">
     <meta name="copyright" Content="the Hub ICA">
-    <meta name="description" Content="Ежегодный городской Game Jam в Казахстане от Satbayev University и the Hub ICA">
+    <meta name="description" Content="Первый ежегодный городской Game Jam в Казахстане от Satbayev University и the Hub ICA">
     <meta name="keywords" Content ="алматы, almaty, game jam, гейм джем, игра, иры, университет, разработка игр, конкурс, прибыль, хакатон, hackathon, satbayev university, su, сатбаев, сатпаев, компьютеры, пк, ноутбуки, 2д, 3д, юнити, хаб, зе хаб, thehub, the hub, ретро, инди, издатели, издательство, грант, обучение, развитие, hub, 3d, 2d, art, development, indie, fun, веселье, приз">
     <link rel="shortcut icon" href="../img/gamej2.png" type="image/x-icon">
     <meta name="Publisher-Email" Content="bighub.info@gmail.com">
@@ -48,42 +48,42 @@
                 </div>
 
             </div>
-
+ 
             <div class="shortcut_about shortcut_icons" id="about_sh">
                 <img src="../img/computer.png" alt="about" class="shortcut_img">
-                <p class="shortcut_names">About G.J.</p>
+                <p class="shortcut_names">О нас</p>
             </div>
-            <div class="shortcut_faq shortcut_icons" id="faq_sh">
-                <img src="../img/faq.png" alt="faq" class="shortcut_img">
-                <p class="shortcut_names">FAQ</p>
+            <div  id="faq_sh">
+               <!-- <img src="../img/faq.png" alt="faq" class="shortcut_img">
+                <p class="shortcut_names">FAQ</p>-->
             </div>
-            <div class="shortcut_rules shortcut_icons" id="rules_sh">
-                <img src="../img/registe2r.png" alt="rules" class="shortcut_img">
-                <p class="shortcut_names">Rules</p>
+            <div  id="rules_sh">
+                <!--<img src="../img/registe2r.png" alt="rules" class="shortcut_img">
+                <p class="shortcut_names">Rules</p>-->
             </div>
-            <div class="shortcut_schedule shortcut_icons" id="schedule_sh">
-                <img src="../img/schedule.png" alt="schedule" class="shortcut_img">
-                <p class="shortcut_names">Schedule</p>
+            <div  id="schedule_sh">
+                <!--<img src="../img/schedule.png" alt="schedule" class="shortcut_img">
+                <p class="shortcut_names">Schedule</p>-->
             </div>
             <div class="shortcut_reg shortcut_icons" id="reg_sh">
                 <img src="../img/register.png" alt="registration" class="shortcut_img">
-                <p class="shortcut_names">Upload</p>
+                <p class="shortcut_names">загрузить</p>
             </div>
-            <div class="shortcut_awards shortcut_icons" id="awards_sh">
-                <img src="../img/awards.png" alt="awards" class="shortcut_img">
-                <p class="shortcut_names">Awards</p>
+            <div  id="awards_sh">
+               <!-- <img src="../img/awards.png" alt="awards" class="shortcut_img">
+                <p class="shortcut_names">Awards</p>-->
             </div>
-            <div class="shortcut_sponsors shortcut_icons" id="sponsor_sh">
-                <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
-                <p class="shortcut_names">Sponsorship</p>
+            <div  id="sponsor_sh">
+               <!-- <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
+                <p class="shortcut_names">Sponsorship</p>-->
             </div>
-            <div class="shortcut_social shortcut_icons" id="social_sh">
-                <img src="../img/social_n.png" alt="social networks" class="shortcut_img">
-                <p class="shortcut_names">Social networks</p>
+            <div  id="social_sh">
+                <!-- <img src="../img/social_n.png" alt="social networks" class="shortcut_img">
+                <p class="shortcut_names">Social networks</p> -->
             </div>
-            <div class="shortcut_games shortcut_icons" id="games_sh">
-                <img src="../img/games.png" alt="games" class="shortcut_img">
-                <p class="shortcut_names">Games</p>
+            <div  id="games_sh">
+                <!-- <img src="../img/games.png" alt="games" class="shortcut_img">
+                <p class="shortcut_names">Games</p> -->
             </div>
             
 
@@ -408,11 +408,14 @@
                     
                     <p class="win_reg_text">Для отправки проектов используйте форму по ссылке ниже:</p>
                     <br>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9jBFjPzwSBDAgcn9ngqTbmNx4KwhZrOQcOHruwo6ESYU_Ew/viewform?usp=sf_link">
-                        <button class="win_form_btn" type="button">
-                            <b>Google Drive</b>
-                        </button>
-                    </a>
+                    <form 
+                     method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbzXSUnmIYfvK8tsfTeVOuBmk7cpGLp6x42WelEfRDm6n-apVy8Jsn3b_8TYhrNaKc8h/exec"
+                    >
+                        <input name="Email" type="email" placeholder="Email" required>
+                        <input name="Name" type="text" placeholder="Name" required>
+                        <button type="submit">Send</button>
+                        </form>
                 </div>
             </div>
             <div class="desktop_win_awards desktop_wins">
@@ -424,7 +427,7 @@
                     <div class="win_control_btns">
                         <img src="../img/min.png" alt="minimize window" class="min_windows_awards">
                         <img src="../img/max.png" alt="maximize window" class="max_windows_awards">
-                        <img src="../img/close.png" alt="close window" class="close_windows_awards">
+                        <img src="../img/close.png" alt="close window" class="close_windows_awards"> 
                     </div>
                 </div>
                 <div class="win_content" id="awards_content">
@@ -664,49 +667,42 @@
                         <div class="windows">
                             <div class="win_btn general_win">
                                 <img src="../img/win95start.png" alt="win59">
-                                <p>Menu</p>
+                                <p>Start</p>
                             </div>
                             <div class="win_about general_win">
                                 <img src="../img/computer.png" alt="computer">
-                                <p>About</p>
+                                <p>About G.J.</p>
                             </div>
-                            <div class="win_faq  general_win">
-                                <img src="../img/faq.png" alt="faq">
-                                <p>FAQ</p>
+                           <div class="win_faq  general_win">
+                               
                             </div>
                             <div class="win_sponsors  general_win">
-                                <img src="../img/coin.png" alt="sponsors">
-                                <p>Sponsorship</p>
+                               
                             </div>
                             <div class="win_social  general_win">
-                                <img src="../img/social_n.png" alt="social networks">
-                                <p>Social</p>
+                                
                             </div>
                             <div class="win_rules  general_win">
-                                <img src="../img/registe2r.png" alt="rules">
-                                <p>Rules</p>
+                              
                             </div>
                             <div class="win_schedule  general_win">
-                                <img src="../img/schedule.png" alt="schedule">
-                                <p>Schedule</p>
-                            </div>
+                              
+                            </div> 
                             <div class="win_reg  general_win">
                                 <img src="../img/register.png" alt="registration">
                                 <p>Upload</p>
                             </div>
                             <div class="win_awards  general_win">
-                                <img src="../img/awards.png" alt="awards">
-                                <p>Awards</p>
+                               
                             </div>
                             <div class="win_games  general_win">
-                                <img src="../img/games.png" alt="games">
-                                <p>Games</p>
-                            </div>
+                                
+                            </div> 
 
                         </div>
                         <div class="time_and_lang">
                             <div class="lang">
-                                <img src="../img/rus.png" alt="rus" class="ch_lang" title="Russian">
+                               
                             </div>
                             <div class="cloak">
                                 <div class="time"></div>
@@ -722,15 +718,15 @@
                     </div>
                     <div class="prog_list">
                         <ul class="prog_list_sections">
-                            <li class="about" id="about"><img src="../img/computer.png" alt="computer" class="prog_list_icons"><p>About</p></li>
-                            <li class="registration" id="reg"><img src="../img/register.png" alt="registration" class="prog_list_icons"><p>Upload</p></li>
-                            <li class="faq" id="faq"><img src="../img/faq.png" alt="faq" class="prog_list_icons"><p>FAQ</p></li>
-                            <li class="sponsor" id="sponsor"><img src="../img/coin.png" alt="sponsor" class="prog_list_icons"><p>Sponsorship</p></li>
-                            <li class="social" id="social"><img src="../img/social_n.png" alt="social networks" class="prog_list_icons"><p>Social networks</p></li>
-                            <li class="rules" id="rules"><img src="../img/registe2r.png" alt="rules" class="prog_list_icons"><p>Rules</p></li>
-                            <li class="schedule" id="schedule"><img src="../img/schedule.png" alt="schedule" class="prog_list_icons"><p>Schedule</p></li>
-                            <li class="awards" id="awards"><img src="../img/awards.png" alt="awards" class="prog_list_icons"><p>Awards</p></li>
-                            <li class="games" id="games"><img src="../img/games.png" alt="games" class="prog_list_icons"><p>Games</p></li>
+                            <li class="about" id="about"><img src="../img/computer.png" alt="computer" class="prog_list_icons"><p>О нас</p></li>
+                            <li class="registration" id="reg"><img src="../img/register.png" alt="registration" class="prog_list_icons"><p>загрузить</p></li>
+                            <li  id="sponsor"></li>
+                            <li  id="social"></li>
+                            <li  id="rules"></li>
+                            <li  id="schedule"></li>
+                            <li  id="faq"></li> 
+                            <li id="awards"></li>
+                            <li id="games"></li>
                         </ul>
                     </div>
                     <div class="prog_list sponsor_prog_list">
@@ -790,7 +786,8 @@
         </div>  
     </div>
     <div class="loader" id="page_prelodaer">
-        <div class="loader_wrapper">
+       <!-- отвечает за лоудер
+         <div class="loader_wrapper">
             <div class="load_pseudo_icon">
                 <p>MyHubSoft</p>
             </div>
@@ -802,18 +799,19 @@
                    <h3>Game Jam Week</h3>
                </div>
            </div>
-           <div class="load_animation_content">
+          <div class="load_animation_content">
                <div class="load_bar">
                    <div class="loading_left loading_line">
                    </div>
                    <div class="loading_right loading_line"></div>
-               </div>
-            </div>
+               </div> -->
+            </div> 
         </div>
     </div>
     <script src="../js/loader.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
+
    </body>
 </html>
