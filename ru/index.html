@@ -402,30 +402,77 @@
                         <p class="win_header_way">C:/satbayev/dev.hub/Upload</p>
                     </div>
                     <div class="win_control_btns">
+                        <!-- <img src="../img/min.png" alt="minimize window" class="min_windows_about"> -->
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_about"> 
+                        <!-- Тут надо разобраться добавить логику что бы увеличивалось и разкоментировать другие строчки -->
                         <img src="../img/min.png" alt="minimize window" class="min_windows_reg">
                         <img src="../img/close.png" alt="close window" class="close_windows_reg">
                     </div>
                 </div>
                 <div class="win_content win_form_content" id="reg_content">
-                    <p class="win_reg_text">Для регистрации отправьте</p>
+                    <h2>Регистрация команды</h2>
+                    <p class="win_reg_text">Пожалуйста, заполните все необходимые поля для регистрации.</p>
                     <br>
                     <form 
                         method="POST" 
                         action="https://script.google.com/macros/s/AKfycbwT7e03XzB_QbEIQ3Ou7FANRTxSd5ATmiA8-6o1868LEkeLmCpr097i2KvMUMlJcMdCYA/exec"
                     >
-                        <input name="teamName" type="text" placeholder="Название команды" required>
-                        <input name="captainName" type="text" placeholder="Имя капитана" required>
-                        <input name="captainNumber" type="text" placeholder="Номер капитана" required>
-                        <input name="captainTelegram" type="text" placeholder="Телеграм капитана" required>
-                        <input name="participant1" type="text" placeholder="Участник 1" required>
-                        <input name="participant2" type="text" placeholder="Участник 2">
-                        <input name="participant3" type="text" placeholder="Участник 3">
-                        <input name="participant4" type="text" placeholder="Участник 4">
-                        <input name="participant5" type="text" placeholder="Участник 5">
-                        <button type="submit">Отправить</button>
+                        <!-- Информация о команде -->
+                        <h3>Информация о команде</h3>
+                        <table>
+                            <tr>
+                                <td><label for="teamName">Название команды:</label></td>
+                                <td><input id="teamName" name="teamName" type="text" placeholder="Введите название" required></td>
+                            </tr>
+                        </table>
+            
+                        <!-- Информация о капитане -->
+                        <h3>Информация о капитане</h3>
+                        <table>
+                            <tr>
+                                <td><label for="captainName">Имя капитана:</label></td>
+                                <td><input id="captainName" name="captainName" type="text" placeholder="Введите имя" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="captainNumber">Номер капитана:</label></td>
+                                <td><input id="captainNumber" name="captainNumber" type="text" placeholder="Введите номер" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="captainTelegram">Телеграм капитана:</label></td>
+                                <td><input id="captainTelegram" name="captainTelegram" type="text" placeholder="Telegram" required></td>
+                            </tr>
+                        </table>
+            
+                        <!-- Информация об участниках -->
+                        <h3>Участники команды</h3>
+                        <table>
+                            <!-- <tr>
+                                <td><label for="participant1">Участник 1:</label></td>
+                                <td><input id="participant1" name="participant1" type="text" placeholder="Имя участника 1" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="participant2">Участник 2:</label></td>
+                                <td><input id="participant2" name="participant2" type="text" placeholder="Имя участника 2"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="participant3">Участник 3:</label></td>
+                                <td><input id="participant3" name="participant3" type="text" placeholder="Имя участника 3"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="participant4">Участник 4:</label></td>
+                                <td><input id="participant4" name="participant4" type="text" placeholder="Имя участника 4"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="participant5">Участник 5:</label></td>
+                                <td><input id="participant5" name="participant5" type="text" placeholder="Имя участника 5"></td>
+                            </tr> -->
+                        </table>
+                        <!-- Кнопка отправки -->
+                        <br>
+                        <button type="submit">Отправить заявку</button>
                     </form>
                 </div>
-            </div>            
+            </div>                     
             <div class="desktop_win_awards desktop_wins">
                 <div class="win_header" id="move_awards">
                     <div class="win_icon_text">
