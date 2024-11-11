@@ -9,9 +9,36 @@
   font-weight: normal;
   font-style: italic; }
 body {
-  padding: 0;
+  background-image: url(../img/background/back3.png);
+  background-size: contain 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
   margin: 0;
-  background-color: #000; }
+    }
+
+.logo-container {
+  
+  display: grid;  /* Используем grid */
+    place-items: center;  /* Центрируем логотип по горизонтали и вертикали */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 768px) {
+    .logo {
+        width: 40vw;  /* Логотип будет занимать 15% от ширины экрана */
+    }
+}
+
+/* Для экранов шириной 480px и меньше */
+@media (max-width: 480px) {
+    .logo {
+        width: 100vw;  /* Логотип будет занимать 30% от ширины экрана */
+    }
+}
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
@@ -39,6 +66,7 @@ ul, ol, li {
     display: block;
     pointer-events: none; }
 
+   
 .loader {
   background-image: url(../img/win59clouds.png);
   background-repeat: no-repeat;
@@ -1179,7 +1207,7 @@ ul, ol, li {
   .desktop_wins {
     left: 10px; } }
 .background_galaxy {
-  background-image: url(../img/background/STARS.jpg);
+  background-image: url(theHubStudio.github.io\img\background\back3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
