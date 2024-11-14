@@ -412,6 +412,7 @@
                     <form 
                         method="POST" 
                         action="https://script.google.com/macros/s/AKfycbwT7e03XzB_QbEIQ3Ou7FANRTxSd5ATmiA8-6o1868LEkeLmCpr097i2KvMUMlJcMdCYA/exec"
+                        onsubmit="redirectTelegram()"
                     >
                         <!-- Информация о команде -->
                         <h3>Информация о команде</h3>
@@ -421,7 +422,6 @@
                                 <td><input id="teamName" name="teamName" type="text" placeholder="Введите название" required></td>
                             </tr>
                         </table>
-            
                         <!-- Информация о капитане -->
                         <h3>Информация о капитане</h3>
                         <table>
@@ -438,9 +438,8 @@
                                 <td><input id="captainTelegram" name="captainTelegram" type="text" placeholder="Telegram" required></td>
                             </tr>
                         </table>
-            
                         <!-- Информация об участниках -->
-                        <!-- <h3>Участники команды</h3> -->
+                        <h3>После отправки формы мы редиректнем вас в телеграм, вся дополнительная информация будет публиковаться в этом канале.</h3>
                         <table>
                             <!-- <tr>
                                 <td><label for="participant1">Участник 1:</label></td>
@@ -486,10 +485,11 @@
                         По завершению фестиваля, помимо трех призовых мест, победители будут определены также в следующих номинациях: 
                     </p>
                     <ul class="win_content_list">
-                        <li><span>Innovation – уникальность идеи;</span></li>
-                        <li><span>Design – визуальный стиль и эффект;</span></li>
-                        <li><span>Script – за лучший сюжет;</span></li>
-                        <li><span>Best Junior Team - за лучший школьный проект;</span></li>
+                        <li><span>Лучшая образовательная игра (Education);</span></li>
+                        <li><span>Лучшая юниорская команда (Best Junior Team);</span></li>
+                        <li><span>Лучший сценарий (Best Script);</span></li>
+                        <li><span>Инновация (Innovation);</span></li>
+                        <li><span>Лучший дизайн (Best Design);</span></li>
                     </ul>
                     <p class="win_content_text">
                         Приз за победу в любой из номинаций и подарки от спонсоров.
@@ -863,6 +863,13 @@
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
-
+    <script>
+        function redirectTelegram() {
+            setTimeout(function() {
+                window.location.href = 'https://t.me/+MnNWWqSNPLBjNzZi';
+            }, 1000); // Задержка в 1 секунду перед редиректом (по желанию)
+        }
+    </script>
+    
    </body>
 </html>
