@@ -37,104 +37,67 @@ DragWindows(MoveSocial, MoveWinSocial);
 DragWindows(MoveGames, MoveWinGames);
 
 function DragWindows(header, windows) {
-    header.addEventListener('mousedown', () => {
-        DragWinElem(header, windows);
-    });
-};
+	// Добавляем обработчик только для заголовка
+	header.addEventListener('mousedown', function (e) {
+		// Проверяем, не кликаем ли мы на интерактивные элементы (например, на поле ввода)
+		if (e.target.closest('input, textarea, button')) {
+			return // Не начинаем перетаскивание, если клик был на поле ввода
+		}
 
-function DragWinElem(header, elem){
-    elem.onmousedown = function(e){
-        let coords = getCoords(elem)
-        let shiftX = e.clientX - coords.left;
-        let shiftY = e.clientY - coords.top;
+		// Предотвратить любое поведение по умолчанию для этого элемента
+		e.preventDefault()
 
-        document.body.style.overflow = 'hidden';
+		// Запускаем перетаскивание
+		DragWinElem(header, windows, e)
+	})
+}
 
-        moveAt(e.pageX, e.pageY);
-        function moveAt(pageX, pageY) {
-            elem.style.left = pageX - shiftX + 'px';
-            elem.style.top = pageY - shiftY + 'px';
-        }
+function DragWinElem(header, elem, e) {
+	let coords = getCoords(elem)
+	let shiftX = e.clientX - coords.left
+	let shiftY = e.clientY - coords.top
 
-        function onMouseMove(e) {
-            moveAt(e.pageX, e.pageY);
-        }
-    
-        document.addEventListener('mousemove',onMouseMove);
+	// Убираем прокрутку страницы, чтобы она не двигалась во время перетаскивания
+	document.body.style.overflow = 'hidden'
 
-        if (header.id == 'nomove') {
-            document.removeEventListener('mousemove', onMouseMove);
-            elem.onmouseup = null;
-        }
+	// Функция для перемещения окна по экрану
+	function moveAt(pageX, pageY) {
+		elem.style.left = pageX - shiftX + 'px'
+		elem.style.top = pageY - shiftY + 'px'
+	}
 
-        elem.onmouseup = function() {
-            document.removeEventListener('mousemove', onMouseMove);
-            elem.onmouseup = null;
-        };
-        elem.onmouseleave = function () {
-            document.removeEventListener('mousemove', onMouseMove);
-            elem.onmouseup = null;
-        };
-       
-    };
-    let WinBodyAbout = document.getElementById('about_content');
-    let WinBodyFAQ = document.getElementById('faq_content');
-    let WinBodyRules = document.getElementById('rules_content');
-    let WinBodySchedule = document.getElementById('schedule_content');
-    let WinBodyReg = document.getElementById('reg_content');
-    let WinBodyAwards = document.getElementById('awards_content');
-    let WinBodySponsors = document.getElementById('sponsor_content');
-    let WinBodySocial = document.getElementById('social_content');
-    let WinBodyGames = document.getElementById('games_content');
-    OffDrag(WinBodyAbout);
-    OffDrag(WinBodyFAQ);
-    OffDrag(WinBodyRules);
-    OffDrag(WinBodySchedule);
-    OffDrag(WinBodyReg);
-    OffDrag(WinBodyAwards);
-    OffDrag(WinBodySponsors);
-    OffDrag(WinBodySocial);
-    OffDrag(WinBodyGames);
+	// Начинаем движение при наведении мыши
+	moveAt(e.pageX, e.pageY)
 
-    let WinFooterAbout = document.getElementById('about_footer');
-    let WinFooterFAQ = document.getElementById('faq_footer');
-    let WinFooterRules = document.getElementById('rules_footer');
-    let WinFooterSchedule = document.getElementById('schedule_footer');
-    let WinFooterAwards = document.getElementById('awards_footer');
-    let WinFooterSponosrs = document.getElementById('sponsor_footer');
-    let WinFooterSocial = document.getElementById('social_footer');
-    let WinFooterGames = document.getElementById('games_footer');
+	// Обработчик для перемещения окна
+	function onMouseMove(e) {
+		moveAt(e.pageX, e.pageY)
+	}
 
-    OffDrag(WinFooterAbout);
-    OffDrag(WinFooterFAQ);
-    OffDrag(WinFooterRules);
-    OffDrag(WinFooterSchedule);
-    OffDrag(WinFooterAwards);
-    OffDrag(WinFooterSponosrs);
-    OffDrag(WinFooterSocial);
-    OffDrag(WinFooterGames);
-    function OffDrag(win){
-        win.onmousedown = function(){
-            elem.onmousedown = function(){
-                console.log('false');
-                // elem.preventDefault();
-                return false
-            };
-        };
-    };
+	// Добавляем слушатель для движения мыши
+	document.addEventListener('mousemove', onMouseMove)
 
-    elem.ondragstart = function() {
-        return false;
-    };
+	// Когда отпускаем кнопку мыши — завершаем перетаскивание
+	elem.onmouseup = function () {
+		document.removeEventListener('mousemove', onMouseMove)
+		elem.onmouseup = null
+	}
 
-    function getCoords(elem) {  
-        var box = elem.getBoundingClientRect();
-        return {
-          top: box.top + pageYOffset,
-          left: box.left + pageXOffset
-        };
-    };
-};
+	// Если мышь покидает область окна — завершить перетаскивание
+	elem.onmouseleave = function () {
+		document.removeEventListener('mousemove', onMouseMove)
+		elem.onmouseup = null
+	}
+
+	// Функция для получения координат окна
+	function getCoords(elem) {
+		var box = elem.getBoundingClientRect()
+		return {
+			top: box.top + pageYOffset,
+			left: box.left + pageXOffset,
+		}
+	}
+}
 
 
 
