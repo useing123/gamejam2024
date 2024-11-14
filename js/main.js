@@ -691,4 +691,10 @@ FormInfoOk.addEventListener('click', () => {
 
 
 document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); } )
+    event.preventDefault();
+
+    document.querySelector(".win_form_content").style.display = "none";
+
+    document.querySelector(".win_stasus").style.display = "flex";
+
+})

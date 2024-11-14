@@ -947,6 +947,37 @@ ul, ol, li {
                 border-style: solid;
                 border-color: #000 #fff #fff #000; }
 
+/* .win_form_content {
+  display: none;
+} */
+.win_stasus {
+  
+  background-color: #5b9bb2;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #fff #000 #000 #fff;
+            color: #000;
+            overflow: hidden;
+            height: 430px;
+            display: flex;               
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  text-align: center;  
+  font-family: "Tiny5", monospace;
+  
+}    
+
+.test1 {
+  margin: 10px 0;
+  
+}
+.qr {
+  margin: 10%;
+  height: 40%;
+  width: 40%;
+}
+
 .form_info_win {
   background-color: #bdbebd;
   box-sizing: border-box;
