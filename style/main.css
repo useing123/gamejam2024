@@ -32,6 +32,8 @@
       background-position: center;
       background-repeat: no-repeat;
       margin-top: auto;
+      pointer-events: none;
+
     }
     
     @media (min-width: 768px) {
@@ -1827,7 +1829,6 @@ ul, ol, li {
             bottom: 28px;
             right: 0;
             left: 0; } }
-
 /*# sourceMappingURL=main.css.map */
 .loader1 {
   background-color: black;
