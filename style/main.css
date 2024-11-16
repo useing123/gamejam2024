@@ -13,7 +13,7 @@
     background-size: contain 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100%;
     margin: 0;
       }
       .header .header_wrapper .menu_panel {
@@ -32,6 +32,7 @@
       background-position: center;
       background-repeat: no-repeat;
       margin-top: auto;
+      pointer-events: none;
     }
     
     @media (min-width: 768px) {
@@ -548,9 +549,7 @@ ul, ol, li {
   .menu_windows {
     bottom: 35px; }
 
-  .lang_panel {
-    bottom: 40px;
-    right: 22px; }
+  
     .lang_panel .lang_panel_wrapper .langs {
       width: 35px;
       height: 35px; } }
@@ -562,22 +561,16 @@ ul, ol, li {
     width: 70px; }
   .header .header_wrapper .menu_panel .time_and_lang .lang {
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin-right: 15px; }
+     }
     .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
       width: inherit;
       height: inherit; }
   .header .header_wrapper .menu_panel .time_and_lang .cloak {
     display: none; }
 
-  .lang_panel {
-    right: 12px;
-    bottom: 32px;
-    width: 32px; }
+ 
     .lang_panel .lang_panel_wrapper .langs {
-      width: 25px;
-      height: 25px; } }
+     }}
 @media screen and (max-width: 420px) and (min-width: 320px) {
   .header .header_wrapper .menu_panel .windows .general_win {
     width: 20px;
@@ -602,7 +595,8 @@ ul, ol, li {
   .lang_panel .lang_panel_wrapper .langs {
     margin: 6px 0;
     width: 25px;
-    height: 25px; } }
+    height: 25px;
+    } } 
 @media screen and (max-width: 320px) {
   .header .header_wrapper .menu_panel .time_and_lang .lang {
     display: none;
@@ -947,37 +941,6 @@ ul, ol, li {
                 border-style: solid;
                 border-color: #000 #fff #fff #000; }
 
-/* .win_form_content {
-  display: none;
-} */
-.win_stasus {
-  
-  background-color: #5b9bb2;
-            border-width: 2px;
-            border-style: solid;
-            border-color: #fff #000 #000 #fff;
-            color: #000;
-            overflow: hidden;
-            height: 430px;
-            display: flex;               
-  flex-direction: column;     
-  justify-content: center;    
-  align-items: center;        
-  text-align: center;  
-  font-family: "Tiny5", monospace;
-  
-}    
-
-.test1 {
-  margin: 10px 0;
-  
-}
-.qr {
-  margin: 10%;
-  height: 40%;
-  width: 40%;
-}
-
 .form_info_win {
   background-color: #bdbebd;
   box-sizing: border-box;
@@ -1284,587 +1247,6 @@ ul, ol, li {
           width: 80px;
           height: 30px;
           font-size: 16px; } }
-@media screen and (min-width: 320px) {
-  .desktop_wins {
-    left: 10px; } }
-.background_galaxy {
-  background-image: url(../img/background/STARS.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  user-select: none;
-  z-index: -1; }
-  .background_galaxy .back_planet .back_jupiter {
-    width: 80px;
-    height: 68px;
-    position: fixed;
-    top: 60px;
-    bottom: 0;
-    right: 190px; }
-  .background_galaxy .back_hills_grid .background_hills .back_hills {
-    width: 100%;
-    height: 70%;
-    position: fixed;
-    top: 410px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1; }
-  .background_galaxy .back_hills_grid .back_grid {
-    transition: all 0.2s linear; }
-  .background_galaxy .back_hills_grid .back_grid::before {
-    content: "";
-    display: block;
-    width: 200vw;
-    height: 50vh;
-    position: absolute;
-    top: 60%;
-    left: -50%;
-    background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
-    animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
-    background-color: #1a1818; }
-@keyframes grid-appear-animation {
-  0% {
-    opacity: 0;
-    height: 0;
-    transform: initial; }
-  100% {
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2); } }
-@keyframes grid-background-animation {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 0 20px; } }
-  .background_galaxy .background_text_img {
-    width: 1000px;
-    height: 1000px;
-    margin: 110px auto;
-    text-align: center; }
-    .background_galaxy .background_text_img .back_text {
-      color: #fff;
-      justify-content: center;
-      display: flex;
-      margin-left: 252px;
-      margin-top: -180px;
-      align-items: center; }
-      .background_galaxy .background_text_img .back_text .back_jam_week {
-        margin-right: 15px;
-        display: flex;
-        flex-direction: column; }
-        .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-          font-family: "Italianno", cursive;
-          width: 330px;
-          height: 210px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week .week {
-          font-family: "Syncopate", sans-serif;
-          text-transform: uppercase;
-          font-size: 8px;
-          font-weight: 400;
-          letter-spacing: 6px;
-          text-shadow: 3px 1px 9px #cac030;
-          display: inline;
-          position: relative;
-          top: -20px; }
-      .background_galaxy .background_text_img .back_text .satbayev_university {
-        font-family: "Caveat", cursive;
-        font-size: 35px;
-        display: flex;
-        color: #ffd700;
-        margin-top: 25px;
-        text-shadow: 3px 2px 2px #90286f, -1px -1px 8px #cd4dad, 1px -2px 17px #cd4dad;
-        position: relative;
-        right: 120px;
-        top: 72px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-          margin-right: 10px;
-          transform: rotate(351deg); }
-        .background_galaxy .background_text_img .back_text .satbayev_university .university {
-          transform: rotate(337deg);
-          position: relative;
-          bottom: 32px;
-          right: 0;
-          left: 0; }
-
-@media screen and (max-width: 1100px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0;
-      right: 70px; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 70%;
-      position: fixed;
-      top: 376px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; } }
-@media screen and (max-width: 992px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0;
-      right: 70px; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 70%;
-      position: fixed;
-      top: 394px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .back_hills_grid .back_grid {
-      transition: all 0.2s linear; }
-    .background_galaxy .background_text_img {
-      width: 100%;
-      height: 100%;
-      margin: 170px auto; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 252px;
-        margin-top: -184px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 330px;
-            height: 210px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 93px;
-          top: 75px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 10px;
-            transform: rotate(351deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 720px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0;
-      right: 70px; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 60%;
-      position: fixed;
-      top: 444px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .background_text_img {
-      width: 100%;
-      height: 100%;
-      margin: 170px auto; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 670px;
-        height: 366px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 218px;
-        margin-top: -172px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 290px;
-            height: 190px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 104px;
-          top: 64px;
-          font-size: 30px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 10px;
-            transform: rotate(351deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 576px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0;
-      right: 70px; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 52%;
-      position: fixed;
-      top: 446px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 170px auto; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 590px;
-        height: 356px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 224px;
-        margin-top: -165px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 260px;
-            height: 180px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 104px;
-          top: 64px;
-          font-size: 27px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 10px;
-            transform: rotate(351deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 480px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0;
-      right: 30px; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 52%;
-      position: fixed;
-      top: 415px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .back_hills_grid .back_grid::before {
-      content: "";
-      display: block;
-      width: 200vw;
-      height: 50vh;
-      position: absolute;
-      top: 55%;
-      left: -50%;
-      background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
-      animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
-      background-color: #1a1818; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 170px -46px; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 450px;
-        height: 285px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 180px;
-        margin-top: -104px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 197px;
-            height: 118px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 80px;
-          top: 33px;
-          font-size: 20px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 10px;
-            transform: rotate(340deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 420px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 27%;
-      position: fixed;
-      top: 448px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .back_hills_grid .back_grid::before {
-      content: "";
-      display: block;
-      width: 200vw;
-      height: 50vh;
-      position: absolute;
-      top: 50%;
-      left: -50%;
-      background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
-      animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
-      -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
-      background-color: #1a1818; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 160px -73px; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 377px;
-        height: 263px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 145px;
-        margin-top: -104px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 182px;
-            height: 118px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 74px;
-          top: 33px;
-          font-size: 20px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 10px;
-            transform: rotate(340deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 380px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 30%;
-      position: fixed;
-      top: 455px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 190px -96px; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 400px;
-        height: 230px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 152px;
-        margin-top: -104px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 182px;
-            height: 118px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 74px;
-          top: 33px;
-          font-size: 20px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 5px;
-            transform: rotate(340deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 360px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 200px -100px; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 390px;
-        height: 220px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 125px;
-        margin-top: -104px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 182px;
-            height: 118px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 58px;
-          top: 35px;
-          font-size: 16px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 5px;
-            transform: rotate(332deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 28px;
-            right: 0;
-            left: 0; } }
-@media screen and (max-width: 320px) {
-  .background_galaxy {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    user-select: none;
-    z-index: -1; }
-    .background_galaxy .back_planet .back_jupiter {
-      width: 80px;
-      height: 68px;
-      position: fixed;
-      top: 60px;
-      bottom: 0; }
-    .background_galaxy .back_hills_grid .background_hills .back_hills {
-      width: 100%;
-      height: 30%;
-      position: fixed;
-      top: 434px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1; }
-    .background_galaxy .background_text_img {
-      width: 565px;
-      height: 500px;
-      margin: 200px -120px; }
-      .background_galaxy .background_text_img .back_logo {
-        width: 340px;
-        height: 220px; }
-      .background_galaxy .background_text_img .back_text {
-        color: #fff;
-        margin-left: 110px;
-        margin-top: -96px; }
-        .background_galaxy .background_text_img .back_text .back_jam_week {
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column; }
-          .background_galaxy .background_text_img .back_text .back_jam_week .jam {
-            font-family: "Italianno", cursive;
-            width: 168px;
-            height: 110px; }
-        .background_galaxy .background_text_img .back_text .satbayev_university {
-          right: 54px;
-          top: 32px;
-          font-size: 14px; }
-          .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
-            margin-right: 0px;
-            transform: rotate(332deg); }
-          .background_galaxy .background_text_img .back_text .satbayev_university .university {
-            transform: rotate(330deg);
-            position: relative;
-            bottom: 28px;
-            right: 0;
-            left: 0; } }
 
 /*# sourceMappingURL=main.css.map */
 .loader1 {
@@ -1886,8 +1268,30 @@ ul, ol, li {
 }
 
 .logo {
-  max-width: 20%;
-  margin-top: -100px;
+  display: grid;  /* Используем grid */
+      place-items: center;  /* Центрируем логотип по горизонтали и вертикали */
+     
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 50px;
+
+}
+@media (min-width: 768px) {
+  .logo {
+      width: 25%;  /* Логотип будет занимать 15% от ширины экрана */
+  }
+  .text{
+    font-size: 15px ;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+      width: 60%;  /* Логотип будет занимать 30% от ширины экрана */
+  }
+  .text{
+    font-size: 14px ;
+  }
 }
 
 
@@ -1912,10 +1316,10 @@ ul, ol, li {
 
 .load {
   background-image: url("img2/load.png");
-  height: 7%;
+  height: 5%;
   position: fixed;
   bottom: -10%;
-  left: 0;
+  left: -5px;
   width: 100%;
   text-align: center;
   padding: 6px;
@@ -1932,9 +1336,11 @@ ul, ol, li {
 @keyframes slideUp {
   0% {
       bottom: -7%; /* Исходное положение (ниже экрана) */
+      
   }
   100% {
       bottom: 0; /* Конечное положение (на экране) */
+      
   }
 }
 
