@@ -584,6 +584,31 @@ MaxGames.addEventListener('click', () => {
         gamesmax = true;
     }
 });
+var regmax = false;
+let MaxReg = document.querySelector('.max_windows_reg');
+let MaxRegContent = document.getElementById('reg_content');
+let MaxRegHeader = document.getElementById('move_reg')
+MaxReg.addEventListener('click', () => {
+	if (regmax) {
+		RegWindows.style.width = '400px'
+		RegWindows.style.height = '500px'
+		RegWindows.style.left = '5%'
+		RegWindows.style.top = '25%'
+		MaxRegContent.style.width = '367px'
+		MaxRegContent.style.height = '430px'
+		MaxRegHeader.id = 'move_reg'
+		regmax = false
+	} else {
+		RegWindows.style.width = '100%'
+		RegWindows.style.height = '100%'
+		RegWindows.style.left = '0px'
+		RegWindows.style.top = '0px'
+		MaxRegContent.style.width = 'auto'
+		MaxRegContent.style.height = '90%'
+		MaxRegHeader.id = 'nomove'
+		regmax = true
+	}
+})
 
 // show faq questions
 let questionFirst = document.getElementById('question_1');
@@ -663,3 +688,13 @@ FormInfoClose.addEventListener('click', () => {
 FormInfoOk.addEventListener('click', () => {
     FormInfo.classList.remove('form_info_win_on');
 });
+
+
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.querySelector(".win_form_content").style.display = "none";
+
+    document.querySelector(".win_stasus").style.display = "flex";
+
+})
