@@ -38,7 +38,8 @@
     
     @media (min-width: 768px) {
       .logotip {
-          width: 35%;  /* Логотип будет занимать 15% от ширины экрана */
+          width: 35%;
+          margin-bottom: 10%;
       }
   }
   
@@ -1853,12 +1854,10 @@ ul, ol, li {
 .logo {
   display: grid;  /* Используем grid */
       place-items: center;  /* Центрируем логотип по горизонтали и вертикали */
-     
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      margin-top: 50px;
-
+      margin-bottom: 10%;
 }
 @media (min-width: 768px) {
   .logo {
