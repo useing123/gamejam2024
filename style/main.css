@@ -632,11 +632,11 @@ ul, ol, li {
   right: 0;
   left: 0; }
 
-/*.shortcut_faq {
-  top: 110px;
+/* .shortcut_faq {
+  top: 310px;
   bottom: 0;
   right: 0;
-  left: 0; }
+  left: 0; } */
 
 .shortcut_rules {
   top: 210px;
@@ -644,11 +644,11 @@ ul, ol, li {
   right: 0;
   left: 0; }
 
-/*.shortcut_schedule {
+/* .shortcut_schedule {
   top: 310px;
   bottom: 0;
   right: 0;
-  left: 0; }*/
+  left: 0; } */
 
   .shortcut_reg {
     top: 110px;
@@ -656,29 +656,29 @@ ul, ol, li {
     right: 0;
     left: 0; }
   
-  /*.shortcut_awards {
-    top: 510px;
+  .shortcut_awards {
+    top: 310px;
     bottom: 0;
     right: 0;
     left: 0; }
   
-  /*.shortcut_sponsors {
+  /* .shortcut_sponsors {
     top: 10px;
     bottom: 0;
     right: 0;
-    left: 90px; }/*/
+    left: 90px; }
   
-  /*.shortcut_social {
+  .shortcut_social {
     top: 110px;
     bottom: 0;
     right: 0;
-    left: 90px; }*/
+    left: 90px; }
   
-  /*.shortcut_games {
+  .shortcut_games {
     top: 210px;
     bottom: 0;
     right: 0;
-    left: 90px; }*/
+    left: 90px; } */
 
 @media screen and (max-width: 720px) {
   .shortcut_icons {
@@ -696,11 +696,11 @@ ul, ol, li {
     right: 0;
     left: 0; }
 
-  .shortcut_faq {
+  /* .shortcut_faq {
     top: 88px;
     bottom: 0;
     right: 0;
-    left: 0; }
+    left: 0; } */
 
   .shortcut_rules {
     top: 184px;
@@ -708,11 +708,11 @@ ul, ol, li {
     right: 0;
     left: 0; }
 
-  .shortcut_schedule {
+  /* .shortcut_schedule {
     top: 276px;
     bottom: 0;
     right: 0;
-    left: 0; }
+    left: 0; } */
 
   .shortcut_reg {
     top: 110px;
@@ -721,7 +721,7 @@ ul, ol, li {
   left: 0; }
 
   .shortcut_awards {
-    top: 457px;
+    top: 276px;
     bottom: 0;
     right: 0;
     left: 0; }
