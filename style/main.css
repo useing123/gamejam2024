@@ -1867,6 +1867,8 @@ ul, ol, li {
   .text{
     font-size: 15px ;
   }
+  
+  
 }
 @media (max-width: 480px) {
   .logo {
@@ -1875,13 +1877,14 @@ ul, ol, li {
   .text{
     font-size: 14px ;
   }
+  
 }
 
 
 @keyframes changeBackground {
   50% {
       /* background-color: #000000;  */
-      background-image: url("img2/back1.png");
+      background-image: url("../img/background/back4.png");
       background-repeat: no-repeat; background-position: center center; background-size: cover;
     }
 
@@ -1890,7 +1893,7 @@ ul, ol, li {
       
       /* background-color: rgba(0, 0, 0, 0.0); */
       /* opacity: .4; */
-      background-image: url("img2/back.png") ;
+      background-image: url("../img/background/back1.jpg") ;
       background-repeat: no-repeat; background-position: center center; background-size: cover;
     }
 }
@@ -1898,7 +1901,7 @@ ul, ol, li {
 
 
 .load {
-  background-image: url("img2/load.png");
+  background-image: url("../img/load.png");
   height: 5%;
   position: fixed;
   bottom: -10%;
@@ -1922,7 +1925,7 @@ ul, ol, li {
       
   }
   100% {
-      bottom: 0; /* Конечное положение (на экране) */
+      bottom: -0.5%; /* Конечное положение (на экране) */
       
   }
 }
