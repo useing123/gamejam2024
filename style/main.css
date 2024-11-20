@@ -1836,7 +1836,7 @@ ul, ol, li {
 /*# sourceMappingURL=main.css.map */
 .loader1 {
   background-color: black;
-  animation: changeBackground 6s forwards;
+  animation: changeBackground 7s forwards;
   z-index: 100;
   
 }
@@ -1883,17 +1883,14 @@ ul, ol, li {
 
 @keyframes changeBackground {
   50% {
-      /* background-color: #000000;  */
-      background-image: url("../img/background/back4.png");
+      background-color: rgba(0, 0, 0, 1.0);
       background-repeat: no-repeat; background-position: center center; background-size: cover;
     }
 
 
   100% {
       
-      /* background-color: rgba(0, 0, 0, 0.0); */
-      /* opacity: .4; */
-      background-image: url("../img/background/back1.jpg") ;
+      background-color: rgba(0, 0, 0, 0.0);
       background-repeat: no-repeat; background-position: center center; background-size: cover;
     }
 }
