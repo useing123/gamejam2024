@@ -386,84 +386,83 @@ ul, ol, li {
           font-size: 20px;
           font-weight: lighter; }
 
-          .menu_windows {
-            padding: 2px;
-            background-color: #bdbebd;
-            z-index: 2;
-            position: fixed;
-            bottom: 40px;
-            right: 0;
-            left: 0;
-            width: 170px;
-            height: 115px;
-            border-width: 2px;
-            border-style: solid;
-            border-color: #fff #000 #000 #fff;
-            margin-left: 3px;
-            display: none;
-            font-family: "Tiny5", sans-serif; }
-            .menu_windows .menu_windows_wrapper {
-              display: flex;
-              justify-content: space-between; }
-              .menu_windows .menu_windows_wrapper .name_line {
-                width: 35px;
-                height: 370px;
-                background-color: #ba0b0b;
-                background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
-                text-align: start; }
-                .menu_windows .menu_windows_wrapper .name_line p {
-                  transform: rotate(-90deg);
-                  margin-top: 75px;
-                  font-size: 14px;
-                  font-weight: bolder;
-                  letter-spacing: 2px;
-                  color: #fff; }
-              .menu_windows .menu_windows_wrapper .prog_list {
-                width: 100%; }
-                .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections {
-                  list-style-type: none; }
-                  .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
-                    padding: 5px;
-                    margin-bottom: 5px;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer; }
-                    .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li .prog_list_icons {
-                      width: 25px;
-                      height: 25px;
-                      margin-right: 5px; }
-                    .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li p {
-                      color: #000;
-                      font-size: 13px; }
-                  .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover {
-                    background-color: #ba0b0b; }
-                    .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover p {
-                      color: #fff;
-                      user-select: none; }
-                  .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections .games {
-                    display: none; }
-              .menu_windows .menu_windows_wrapper .sponsor_prog_list {
-                z-index: 1;
-                position: fixed;
-                width: 134px;
-                left: 43px;
-                height: 360px;
-                background-color: #bdbebd;
-                display: none; }
-                .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .sponsor_links {
-                  text-decoration: none;
-                  display: flex;
-                  width: 100%; }
-                .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow {
-                  user-select: none;
-                  margin-top: 1em; }
-                  .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow img {
-                    transform: rotate(90deg); }
-                .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow:hover {
-                  background-color: rgba(255, 255, 255, 0); }
-              .menu_windows .menu_windows_wrapper .sponsor_prog_list_on {
-                display: block; }
-          
+.menu_windows {
+  padding: 2px;
+  background-color: #bdbebd;
+  z-index: 2;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  width: 170px;
+  height: 80px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  margin-left: 3px;
+  display: none;
+  font-family: "Tiny5", sans-serif; }
+  .menu_windows .menu_windows_wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .menu_windows .menu_windows_wrapper .name_line {
+      width: 35px;
+      height: 370px;
+      background-color: #ba0b0b;
+      background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
+      text-align: start; }
+      .menu_windows .menu_windows_wrapper .name_line p {
+        transform: rotate(-90deg);
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        color: #fff; }
+    .menu_windows .menu_windows_wrapper .prog_list {
+      width: 100%; }
+      .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections {
+        list-style-type: none; }
+        .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
+          padding: 5px;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          cursor: pointer; }
+          .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li .prog_list_icons {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px; }
+          .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li p {
+            color: #000;
+            font-size: 13px; }
+        .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover {
+          background-color: #ba0b0b; }
+          .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover p {
+            color: #fff;
+            user-select: none; }
+        .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections .games {
+          display: none; }
+    .menu_windows .menu_windows_wrapper .sponsor_prog_list {
+      z-index: 1;
+      position: fixed;
+      width: 134px;
+      left: 43px;
+      height: 360px;
+      background-color: #bdbebd;
+      display: none; }
+      .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .sponsor_links {
+        text-decoration: none;
+        display: flex;
+        width: 100%; }
+      .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow {
+        user-select: none;
+        margin-top: 1em; }
+        .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow img {
+          transform: rotate(90deg); }
+      .menu_windows .menu_windows_wrapper .sponsor_prog_list .prog_list_sections .back_arrow:hover {
+        background-color: rgba(255, 255, 255, 0); }
+    .menu_windows .menu_windows_wrapper .sponsor_prog_list_on {
+      display: block; }
 
 .menu_windows_on {
   display: block; }

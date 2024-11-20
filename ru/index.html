@@ -38,14 +38,14 @@
                 <p class="shortcut_names">О нас</p>
             </div>
             <div class="shortcut_faq shortcut_icons" id="faq_sh">
-                <!-- <img src="../img/faq.png" alt="faq" class="shortcut_img">
-                <p class="shortcut_names">FAQ</p> -->
+                <img src="../img/faq.png" alt="faq" class="shortcut_img">
+                <p class="shortcut_names">FAQ</p>
             </div>
             <div class="shortcut_rules shortcut_icons" id="rules_sh">
                 <img src="../img/rules.png" alt="rules" class="shortcut_img">
                 <p class="shortcut_names">Правила</p>
             </div>
-            <div class="" id="schedule_sh">
+            <div class="shortcut_schedule shortcut_icons" id="schedule_sh">
                 <img src="../img/schedule.png" alt="schedule" class="shortcut_img">
                 <p class="shortcut_names">Расписание</p>
             </div>
@@ -58,16 +58,12 @@
                 <p class="shortcut_names">Номинации</p>
             </div>
             <div id="sponsor_sh">
-                <!-- <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
-                <p class="shortcut_names">Sponsorship</p>-->
+                <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
+                <p class="shortcut_names">Sponsorship</p>
             </div>
             <div id="social_sh">
-                <!-- <img src="../img/social_n.png" alt="social networks" class="shortcut_img">
-                <p class="shortcut_names">Social networks</p> -->
-            </div>
-            <div id="games_sh">
-                <!-- <img src="../img/games.png" alt="games" class="shortcut_img">
-                <p class="shortcut_names">Games</p> -->
+                <img src="../img/social_n.png" alt="social networks" class="shortcut_img">
+                <p class="shortcut_names">Social networks</p>
             </div>
 
 
@@ -393,20 +389,22 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="desktop_win_registration desktop_wins">
+            < class="desktop_win_registration desktop_wins">
                 <div class="win_header" id="move_reg">
                     <div class="win_icon_text">
                         <img src="../img/request.png" alt="" class="win_header_icon">
                         <p class="win_header_way">C:/satbayev/dev.hub/Upload</p>
                     </div>
                     <div class="win_control_btns">
+                        <!-- <img src="../img/min.png" alt="minimize window" class="min_windows_about"> -->
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_about"> 
+                        <!-- Тут надо разобраться добавить логику что бы увеличивалось и разкоментировать другие строчки -->
                         <img src="../img/min.png" alt="minimize window" class="min_windows_reg">
                         <img src="../img/close.png" alt="close window" class="close_windows_reg">
                     </div>
                 </div>
                 <div class="win_content win_form_content" id="reg_content">
-                    
-                    <p class="win_reg_text">Для отправки проектов используйте форму по ссылке ниже:</p>
+                    <p class="win_reg_text">Для регистрации отправьте</p>
                     <br>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9jBFjPzwSBDAgcn9ngqTbmNx4KwhZrOQcOHruwo6ESYU_Ew/viewform?usp=sf_link">
                         <button class="win_form_btn" type="button">
@@ -481,7 +479,7 @@
                             <tr>
                                 <td><label for="participant2">Участник 2:</label></td>
                                 <td><input id="participant2" name="participant2" type="text"
-                                        placeholder="Имя участника 2" required></td>
+                                        placeholder="Имя участника 2"></td>
                             </tr>
                             <tr>
                                 <td><label for="participant3">Участник 3:</label></td>
@@ -504,18 +502,8 @@
                         <br>
                         <button type="submit">Отправить заявку</button>
                     </form>
-
-
                 </div>
-                <div class="win_stasus" style="display: none;">
-                    <h3 class="text1">Спасибо за регистрацию</h3>
-                    <h3 class="text1">Подпишитесь на этот телеграм канал что бы быть в курсе всех событий</h3>
-                    <p class="text1"><a a href="https://t.me/+MnNWWqSNPLBjNzZi">https://t.me/+MnNWWqSNPLBjNzZi</a></p>
-                    <img src="../img/qr.jpg" class="qr">
-                </div>
-            </div>
-
-
+            </div>            
             <div class="desktop_win_awards desktop_wins">
                 <div class="win_header" id="move_awards">
                     <div class="win_icon_text">
@@ -523,9 +511,9 @@
                         <p class="win_header_way">C:/satbayev/dev.hub/awards</p>
                     </div>
                     <div class="win_control_btns">
-                        <img src="../img/min.png" alt="minimize window" class="min_windows_awards">
-                        <img src="../img/max.png" alt="maximize window" class="max_windows_awards">
-                        <img src="../img/close.png" alt="close window" class="close_windows_awards">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_about">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_about">
+                        <img src="../img/close.png" alt="close window" class="close_windows_about">
                     </div>
                 </div>
                 <div class="win_content" id="awards_content">
@@ -568,9 +556,9 @@
                         <p class="win_header_way">C:/satbayev/dev.hub/sponsorship</p>
                     </div>
                     <div class="win_control_btns">
-                        <img src="../img/min.png" alt="minimize window" class="min_windows_sponsors">
-                        <img src="../img/max.png" alt="maximize window" class="max_windows_sponsors">
-                        <img src="../img/close.png" alt="close window" class="close_windows_sponsors">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_about">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_about">
+                        <img src="../img/close.png" alt="close window" class="close_windows_about">
                     </div>
                 </div>
                 <div class="win_content win_content_inner_elems" id="sponsor_content">
@@ -907,7 +895,7 @@
                             </div>
                             <div class="win_rules  general_win">
                                 <img src="../img/rules.png" alt="rules">
-                                <p>Rules</p>
+                                <p>Правила</p>
                             </div>
                             <div class="win_schedule  general_win">
                                 <img src="../img/schedule.png" alt="schedule">
@@ -915,17 +903,16 @@
                             </div>
                             <div class="win_reg  general_win">
                                 <img src="../img/request.png" alt="registration">
-                                <p>Загрузить</p>
+                                <p>Регистрация</p>
                             </div>
                             <div class="win_awards  general_win">
                                 <img src="../img/awards_2.png" alt="awards">
-                                <p>Awards</p>
+                                <p>Номинации</p>
                             </div>
                             <div class="win_games  general_win">
                                 <img src="../img/games.png" alt="games">
                                 <p>Games</p>
                             </div>
-
                         </div>
                         <div class="time_and_lang">
                             <!-- <div class="lang">
@@ -953,12 +940,6 @@
                                     class="prog_list_icons">
                                 <p>Загрузить</p>
                             </li>
-                            <a href="https://www.thehub.su/">
-                                <li>
-                                    <img src="../img/theHub2.png" class="prog_list_icons">
-                                    <p>The HUB</p>
-                                </li>
-                            </a>
                             <li id="sponsor"></li>
                             <li id="social"></li>
                             <li class="rules" id="rules"><img src="../img/rules.png" alt="rules"
@@ -972,60 +953,32 @@
                             <li class="faq" id="faq"><img src="../img/faq.png" alt="faq" class="prog_list_icons">
                                 <p>FAQ</p>
                             </li>
-
                             <li id="awards"></li>
                             <li id="games"></li>
                         </ul>
+
                     </div>
                     <div class="prog_list sponsor_prog_list">
                         <ul class="prog_list_sections">
-
-                            <li class="satbayev" id="su">
-                                <p>Ген.Cпонсор:</p>
-                            </li>
+                             <li class="satbayev" id="su"><p>Бас Демеуші:</p></li>
 
 
-                            <li class="satbayev" id="su"><a href="https://ttc.kz" target="_blank"
-                                    class="sponsor_links"><img src="../img/ttc.png" alt="ttc" class="prog_list_icons">
-                                    <p><b>Transtelecom</b></p>
-                                </a></li>
+                            <li class="satbayev" id="su"><a href="https://ttc.kz" target="_blank" class="sponsor_links"><img src="../img/ttc.png" alt="ttc" class="prog_list_icons"><p><b>Transtelecom</b></p></a></li>
 
-                            <li class="satbayev" id="su">
-                                <p>Спонсоры:</p>
-                            </li>
+                            <li class="satbayev" id="su"><p>Демеуші:</p></li>
 
-                            <li class="satbayev" id="su"><a href="https://satbayev.university" target="_blank"
-                                    class="sponsor_links"><img src="../img/su.png" alt="su" class="prog_list_icons">
-                                    <p>Satbayev U.</p>
-                                </a></li>
+                            <li class="satbayev" id="su"><a href="https://satbayev.university" target="_blank" class="sponsor_links"><img src="../img/su.png" alt="su" class="prog_list_icons"><p>Satbayev U.</p></a></li>
+                            <li class="hub" id="hub"><a href="https://thehub.su/" target="_blank" class="sponsor_links"><img src="../img/theHub pixeled.png" alt="the Hub" class="prog_list_icons"><p>TheHub</p></a></li>
 
 
-                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/edu?lang=kk"
-                                    target="_blank" class="sponsor_links"><img src="../img/mon_orig.png" alt="МОН РК"
-                                        class="prog_list_icons">
-                                    <p>МОН РК</p>
-                                </a></li>
-                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/mdai?lang=ru"
-                                    target="_blank" class="sponsor_links"><img src="../img/mon.png" alt="МЦРИАП РК"
-                                        class="prog_list_icons">
-                                    <p>МЦРИАП РК</p>
-                                </a></li>
+                            <li class="satbayev" id="su"><a href="" target="_blank" class="sponsor_links"><img src="../img/parqour.png" alt="Parqour" class="prog_list_icons"><p>Parqour</p></a></li>
 
-                            <li class="hub" id="hub"><a href="https://thehub.su/" target="_blank"
-                                    class="sponsor_links"><img src="../img/theHub pixeled.png" alt="the Hub"
-                                        class="prog_list_icons">
-                                    <p>TheHub</p>
-                                </a></li>
+                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/edu?lang=kk" target="_blank" class="sponsor_links"><img src="../img/mon_orig.png" alt="МОН РК" class="prog_list_icons"><p>МОН РК</p></a></li>
+                            <li class="satbayev" id="su"><a href="https://www.gov.kz/memleket/entities/mdai?lang=ru" target="_blank" class="sponsor_links"><img src="../img/mon.png" alt="МЦРИАП РК" class="prog_list_icons"><p>МЦРИАП РК</p></a></li>
 
 
-                            <li class="satbayev" id="su"><a href="" target="_blank" class="sponsor_links"><img
-                                        src="../img/parqour.png" alt="Parqour" class="prog_list_icons">
-                                    <p>Parqour</p>
-                                </a></li>
 
-
-                            <li class="back_arrow" id="back"><a href=""></a><img src="../img/back.png" alt="back"
-                                    class="prog_list_icons"></li>
+                            <li class="back_arrow" id="back"><a href=""></a><img src="../img/back.png" alt="back" class="prog_list_icons"></li>
                         </ul>
 
                     </div>
@@ -1073,15 +1026,11 @@
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
-<script>
-    document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
-        event.preventDefault();  // Останавливает стандартное поведение формы
+    <script>
+        document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
+            event.preventDefault();  // Останавливает стандартное поведение формы
 
-        const formData = new FormData(this);  // Собирает данные из формы
-
-        // Добавляем время отправки
-        const submissionTime = new Date().toISOString(); // Формат ISO: YYYY-MM-DDTHH:mm:ss.sssZ
-        formData.append("submissionTime", submissionTime);
+            const formData = new FormData(this);  // Собирает данные из формы
 
         try {
             const response = await fetch("https://script.google.com/macros/s/AKfycbzpIV4eri1K_RDsf8GoUGo-XjU9jL7sRvkGvcBfkrz3qz3WHnoVKRM3XZNr6yIjHIQX/exec", {
