@@ -50,6 +50,30 @@
       }
   }
 
+.win_form_content {
+  display: block;
+}
+
+.win_stasus {
+  display: none;
+}
+
+.text2 {
+  display: block;
+  text-align: center;
+  font-family: "Tiny5", sans-serif;
+}
+
+.text1 {
+  margin: 2%;
+}
+
+.tg {
+  display: block;
+  text-align: center;
+  font-family: "Tiny5", sans-serif;
+}
+
 .qr{
   width: 65%;
 }
