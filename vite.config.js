@@ -5,9 +5,7 @@ export default defineConfig({
   plugins: [
     viteStaticCopy({
       targets: [
-        { src: 'ru/*', dest: 'ru' },
-        { src: 'en/*', dest: 'en' },
-        { src: 'kz/*', dest: 'kz' }
+        { src: 'ru/*', dest: 'ru' }
       ]
     })
   ]
