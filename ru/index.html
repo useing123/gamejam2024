@@ -1073,32 +1073,37 @@
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
-    <script>
-        document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
-            event.preventDefault();  // Останавливает стандартное поведение формы
+<script>
+    document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
+        event.preventDefault();  // Останавливает стандартное поведение формы
 
-            const formData = new FormData(this);  // Собирает данные из формы
+        const formData = new FormData(this);  // Собирает данные из формы
 
-            try {
-                const response = await fetch("https://script.google.com/macros/s/AKfycbzpIV4eri1K_RDsf8GoUGo-XjU9jL7sRvkGvcBfkrz3qz3WHnoVKRM3XZNr6yIjHIQX/exec", {
-                    method: "POST",
-                    body: formData  // Передача данных в виде FormData
-                });
+        // Добавляем время отправки
+        const submissionTime = new Date().toISOString(); // Формат ISO: YYYY-MM-DDTHH:mm:ss.sssZ
+        formData.append("submissionTime", submissionTime);
 
-                if (response.ok) {
-                    // Показывает сообщение об успешной отправке
-                    document.querySelector('.win_content').style.display = 'none';
-                    document.querySelector('.win_stasus').style.display = 'block';
-                } else {
-                    console.error("Ошибка при отправке данных:", response.status, response.statusText);
-                    alert("Ошибка при отправке данных. Пожалуйста, попробуйте еще раз.");
-                }
-            } catch (error) {
-                console.error("Ошибка сети:", error);
-                alert("Ошибка сети. Пожалуйста, проверьте ваше соединение и попробуйте снова.");
+        try {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbzpIV4eri1K_RDsf8GoUGo-XjU9jL7sRvkGvcBfkrz3qz3WHnoVKRM3XZNr6yIjHIQX/exec", {
+                method: "POST",
+                body: formData  // Передача данных в виде FormData
+            });
+
+            if (response.ok) {
+                // Показывает сообщение об успешной отправке
+                document.querySelector('.win_content').style.display = 'none';
+                document.querySelector('.win_stasus').style.display = 'block';
+            } else {
+                console.error("Ошибка при отправке данных:", response.status, response.statusText);
+                alert("Ошибка при отправке данных. Пожалуйста, попробуйте еще раз.");
             }
-        });
-    </script>
+        } catch (error) {
+            console.error("Ошибка сети:", error);
+            alert("Ошибка сети. Пожалуйста, проверьте ваше соединение и попробуйте снова.");
+        }
+    });
+</script>
+
 </body>
 
 </html>
