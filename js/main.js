@@ -698,3 +698,51 @@ FormInfoOk.addEventListener('click', () => {
 //     document.querySelector(".win_stasus").style.display = "flex";
 
 // })
+
+
+// let gameFirst = document.getElementById('game_1');
+// let gameFirstA = document.getElementById('game_1_answer');
+// gameFirst.addEventListener('click', ()=>{
+//     gameFirstA.classList.toggle('game_answer_on');
+    
+// });
+
+// const gameFirst = document.getElementById('game_1');
+// const gameFirstA = document.getElementById('game_1_answer');
+
+// gameFirst.addEventListener('click', () => {
+//     gameFirstA.classList.toggle('text_answer_on');
+// });
+
+
+//show games 
+
+// let gameFirst = document.getElementById('game_1');
+// let gameFirstA = document.getElementById('game_1_answer');
+// questionFirst.addEventListener('click', ()=>{
+//     questionFirstA.classList.toggle('game_answer_on');
+    
+// });
+// let gameSecond = document.getElementById('question_2');
+// let gameSecondA = document.getElementById('question_2_answer');
+// questionSecond.addEventListener('click', ()=>{
+//     questionSecondA.classList.toggle('text_answer_on');
+    
+// });
+// let gameThird = document.getElementById('question_3');
+// let gameThirdA = document.getElementById('question_3_answer');
+// questionThird.addEventListener('click', ()=>{
+//     questionThirdA.classList.toggle('text_answer_on');
+    
+// });
+// let gameFourth = document.getElementById('question_4');
+// let gameFourthA = document.getElementById('question_4_answer');
+// questionFourth.addEventListener('click', ()=>{
+//     questionFourthA.classList.toggle('text_answer_on');
+   
+// });
+// let gameFifth = document.getElementById('question_5');
+// let gamenFifthA = document.getElementById('question_5_answer');
+// questionFifth.addEventListener('click', ()=>{
+//     questionFifthA.classList.toggle('text_answer_on');
+// });
