@@ -756,10 +756,10 @@ ul, ol, li {
     left: 90px; }
 
   .shortcut_games {
-    top: 999999px;
+    top: 180px;
     bottom: 0;
     right: 0;
-    left: 9999999px; } }
+    left: 90px; } }
 .desktop_wins {
   position: fixed;
   top: 130px;
