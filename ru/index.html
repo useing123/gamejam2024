@@ -68,7 +68,7 @@
                 <img src="../img/games.png" alt="games" class="shortcut_img">
                 <a href="https://docs.google.com/document/d/1sVFcJc9pia3B35ArmWjXaVj2e7jPU097/edit?usp=sharing&ouid=108477187887844590700&rtpof=true&sd=true"
                     class="shortcut_names"></a>
-                    <p class="shortcut_names">Нацио-нальные игры</p>
+                    <p class="shortcut_names">Nomad Games</p>
             </div>
 
 
@@ -876,7 +876,7 @@
                         </div>
                         <div class="win_games  general_win">
                             <img src="../img/games.png" alt="games">
-                            <p>Games</p>
+                            <p>Nomad Games</p>
                         </div>
 
                     </div>
@@ -928,7 +928,7 @@
                             <p>Номинации</p>
                         </li>
                         <li class="games" id="games"><img src="../img/games.png" alt="games" class="prog_list_icons">
-                            <p>Национальные игры</p>
+                            <p>Nomad Games</p>
                         </li>
                     </ul>
                 </div>
@@ -1036,70 +1036,65 @@
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
     <script>
-const gameFirst = document.getElementById('game_1');
-const gameFirstA = document.getElementById('game_1_answer');
-gameFirst.addEventListener('click', () => {
-    gameFirstA.classList.toggle('text_answer_on');
-});
+    const gameFirst = document.getElementById('game_1');
+    const gameFirstA = document.getElementById('game_1_answer');
+    gameFirst.addEventListener('click', () => {
+        gameFirstA.classList.toggle('text_answer_on');
+    });
 
+    const gameSecond = document.getElementById('game_2');
+    const gameSecondA = document.getElementById('game_2_answer');
+    gameSecond.addEventListener('click', () => {
+        gameSecondA.classList.toggle('text_answer_on');
+    });
 
+    const gameThird = document.getElementById('game_3');
+    const gameThirdA = document.getElementById('game_3_answer');
+    gameThird.addEventListener('click', () => {
+        gameThirdA.classList.toggle('text_answer_on');
+    });
 
+    const gameFourth = document.getElementById('game_4');
+    const gameFourthA = document.getElementById('game_4_answer');
+    gameFourth.addEventListener('click', () => {
+        gameFourthA.classList.toggle('text_answer_on');
+    });
 
-const gameSecond = document.getElementById('game_2');
-const gameSecondA = document.getElementById('game_2_answer');
-gameSecond.addEventListener('click', () => {
-    gameSecondA.classList.toggle('text_answer_on');
-});
+    const gameFifth = document.getElementById('game_5');
+    const gameFifthA = document.getElementById('game_5_answer');
+    gameFifth.addEventListener('click', () => {
+        gameFifthA.classList.toggle('text_answer_on');
+    });
 
-const gameThird = document.getElementById('game_3');
-const gameThirdA = document.getElementById('game_3_answer');
-gameThird.addEventListener('click', () => {
-    gameThirdA.classList.toggle('text_answer_on');
-});
+    const game6 = document.getElementById('game_6');
+    const game6A = document.getElementById('game_6_answer');
+    game6.addEventListener('click', () => {
+        game6A.classList.toggle('text_answer_on');
+    });
 
-const gameFourth = document.getElementById('game_4');
-const gameFourthA = document.getElementById('game_4_answer');
-gameFourth.addEventListener('click', () => {
-    gameFourthA.classList.toggle('text_answer_on');
-});
+    const game7 = document.getElementById('game_7');
+    const game7A = document.getElementById('game_7_answer');
+    game7.addEventListener('click', () => {
+        game7A.classList.toggle('text_answer_on');
+    });
 
-const gameFifth = document.getElementById('game_5');
-const gameFifthA = document.getElementById('game_5_answer');
-gameFifth.addEventListener('click', () => {
-    gameFifthA.classList.toggle('text_answer_on');
-});
+    const game8 = document.getElementById('game_8');
+    const game8A = document.getElementById('game_8_answer');
+    game8.addEventListener('click', () => {
+        game8A.classList.toggle('text_answer_on');
+    });
 
-const game6 = document.getElementById('game_6');
-const game6A = document.getElementById('game_6_answer');
-game6.addEventListener('click', () => {
-    game6A.classList.toggle('text_answer_on');
-});
+    const game9 = document.getElementById('game_9');
+    const game9A = document.getElementById('game_9_answer');
+    game9.addEventListener('click', () => {
+        game9A.classList.toggle('text_answer_on');
+    });
 
-const game7 = document.getElementById('game_7');
-const game7A = document.getElementById('game_7_answer');
-game7.addEventListener('click', () => {
-    game7A.classList.toggle('text_answer_on');
-});
-
-const game8 = document.getElementById('game_8');
-const game8A = document.getElementById('game_8_answer');
-game8.addEventListener('click', () => {
-    game8A.classList.toggle('text_answer_on');
-});
-
-const game9 = document.getElementById('game_9');
-const game9A = document.getElementById('game_9_answer');
-game9.addEventListener('click', () => {
-    game9A.classList.toggle('text_answer_on');
-});
-
-const game10 = document.getElementById('game_10');
-const game10A = document.getElementById('game_10_answer');
-game10.addEventListener('click', () => {
-    game10A.classList.toggle('text_answer_on');
-});
-
-
+    const game10 = document.getElementById('game_10');
+    const game10A = document.getElementById('game_10_answer');
+    game10.addEventListener('click', () => {
+        game10A.classList.toggle('text_answer_on');
+    });
 
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы
