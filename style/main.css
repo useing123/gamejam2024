@@ -720,38 +720,38 @@ ul, ol, li {
     left: 0; }
 
   .shortcut_faq {
-    top: 88px;
+    top: 90px;
     bottom: 0;
     right: 0;
     left: 0; }
 
   .shortcut_rules {
-    top: 184px;
+    top: 170px;
     bottom: 0;
     right: 0;
     left: 0; }
 
   .shortcut_schedule {
-    top: 276px;
+    top: 250px;
     bottom: 0;
     right: 0;
     left: 0; }
 
   .shortcut_reg {
-    top: 110px;
+    top: 330px;
   bottom: 0;
   right: 0;
   left: 0; }
 
   .shortcut_awards {
-    top: 276px;
-    bottom: 0;
+    top: 410px;
+    bottom: 60px;
     right: 0;
     left: 0; }
 
   .shortcut_social {
-    top: 88px;
-    bottom: 0;
+    top: 90px;
+    bottom: 60px;
     right: 0;
     left: 90px; }
 
