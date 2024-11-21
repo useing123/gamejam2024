@@ -50,6 +50,27 @@
       }
   }
 
+  .win_form_content {
+    display: block;
+  }
+  .win_stasus {
+    display: none;
+  }
+  .text2 {
+    display: block;
+    text-align: center;
+    font-family: "Tiny5", sans-serif;
+  }
+  .text1 {
+    margin: 2%;
+  }
+  .tg {
+    display: block;
+    text-align: center;
+    font-family: "Tiny5", sans-serif;
+  }
+
+  
 .qr{
   width: 65%;
 }
@@ -395,7 +416,7 @@ ul, ol, li {
             right: 0;
             left: 0;
             width: 170px;
-            height: 115px;
+            height: auto;
             border-width: 2px;
             border-style: solid;
             border-color: #fff #000 #000 #fff;
@@ -634,11 +655,11 @@ ul, ol, li {
   right: 0;
   left: 0; }
 
-/* .shortcut_faq {
-  top: 310px;
+.shortcut_faq {
+  top: 410px;
   bottom: 0;
   right: 0;
-  left: 0; } */
+  left: 0; }
 
 .shortcut_rules {
   top: 210px;
@@ -646,11 +667,11 @@ ul, ol, li {
   right: 0;
   left: 0; }
 
-/* .shortcut_schedule {
+.shortcut_schedule {
   top: 310px;
   bottom: 0;
   right: 0;
-  left: 0; } */
+  left: 0; }
 
   .shortcut_reg {
     top: 110px;
@@ -659,12 +680,12 @@ ul, ol, li {
     left: 0; }
   
   .shortcut_awards {
-    top: 310px;
+    top: 510px;
     bottom: 0;
     right: 0;
     left: 0; }
   
-  /* .shortcut_sponsors {
+  .shortcut_sponsors {
     top: 10px;
     bottom: 0;
     right: 0;
@@ -677,10 +698,10 @@ ul, ol, li {
     left: 90px; }
   
   .shortcut_games {
-    top: 210px;
+    top: 9999999999px;
     bottom: 0;
     right: 0;
-    left: 90px; } */
+    left: 90000000000000px; }
 
 @media screen and (max-width: 720px) {
   .shortcut_icons {
@@ -698,11 +719,11 @@ ul, ol, li {
     right: 0;
     left: 0; }
 
-  /* .shortcut_faq {
+  .shortcut_faq {
     top: 88px;
     bottom: 0;
     right: 0;
-    left: 0; } */
+    left: 0; }
 
   .shortcut_rules {
     top: 184px;
@@ -710,11 +731,11 @@ ul, ol, li {
     right: 0;
     left: 0; }
 
-  /* .shortcut_schedule {
+  .shortcut_schedule {
     top: 276px;
     bottom: 0;
     right: 0;
-    left: 0; } */
+    left: 0; }
 
   .shortcut_reg {
     top: 110px;
@@ -735,10 +756,10 @@ ul, ol, li {
     left: 90px; }
 
   .shortcut_games {
-    top: 182px;
+    top: 999999px;
     bottom: 0;
     right: 0;
-    left: 90px; } }
+    left: 9999999px; } }
 .desktop_wins {
   position: fixed;
   top: 130px;
@@ -830,13 +851,13 @@ ul, ol, li {
     .desktop_wins .win_content .show_date_table_on {
       display: block; }
   .desktop_wins .win_content_inner_elems {
-    background-color: #f1f1f1;
+    background-color: #bfbfbf;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start; }
     .desktop_wins .win_content_inner_elems .win_content_icons {
-      margin: 20px 10px;
-      width: 70px;
+      margin: 40px;
+      width: auto;
       height: 70px;
       text-align: center; }
       .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links {
@@ -847,7 +868,7 @@ ul, ol, li {
           width: 30px;
           height: 30px; }
         .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links .win_content_img_main_sponsor {
-          width: 40px;
+          width: auto;
           height: 40px; }
   .desktop_wins .win_footer {
     display: flex;
