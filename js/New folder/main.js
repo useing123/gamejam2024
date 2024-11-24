@@ -421,257 +421,257 @@ MinMap.addEventListener('click',()=>{
 });
 
 //maximize windows
-var aboutmax = false;
-let MaxAbout = document.querySelector('.max_windows_about');
-let MaxAboutContent = document.getElementById('about_content');
-let MaxAboutHeader = document.getElementById('move_about');
-MaxAbout.addEventListener('click', () => {
-    if (aboutmax) {
-        AboutWindows.style.width = '360px';
-        AboutWindows.style.height = '360px';
-        AboutWindows.style.left = '5%';
-        AboutWindows.style.top = '5%';
-        MaxAboutContent.style.width = 'auto';
-        MaxAboutContent.style.height = '274px';
-        MaxAboutHeader.id = 'move_about';
-        aboutmax = false;
-    } else {
-        AboutWindows.style.width = '100%';
-        AboutWindows.style.height = '100%';
-        AboutWindows.style.left = '0px';
-        AboutWindows.style.top = '0px';
-        MaxAboutContent.style.width = 'auto';
-        MaxAboutContent.style.height = '90%';
-        MaxAboutHeader.id = 'nomove';
-        aboutmax = true;
-    }
-});
-var faqmax = false;
-let MaxFAQ = document.querySelector('.max_windows_faq');
-let MaxFAQContent = document.getElementById('faq_content');
-let MaxFAQHeader = document.getElementById('move_faq');
-MaxFAQ.addEventListener('click', () => {
-    if (faqmax) {
-        FAQWindows.style.width = '360px';
-        FAQWindows.style.height = '360px';
-        FAQWindows.style.left = '5%';
-        FAQWindows.style.top = '10%';
-        MaxFAQContent.style.width = '328px';
-        MaxFAQContent.style.height = '274px';
-        MaxFAQHeader.id = 'move_faq';
-        faqmax = false;
-    } else {
-        FAQWindows.style.width = '100%';
-        FAQWindows.style.height = '100%';
-        FAQWindows.style.left = '0px';
-        FAQWindows.style.top = '0px';
-        MaxFAQContent.style.width = 'auto';
-        MaxFAQContent.style.height = '90%';
-        MaxFAQHeader.id = 'nomove';
-        faqmax = true;
-    }
-});
-var rulesmax = false;
-let MaxRules = document.querySelector('.max_windows_rules');
-let MaxRulesContent = document.getElementById('rules_content');
-let MaxRulesHeader = document.getElementById('move_rules');
-MaxRules.addEventListener('click', () => {
-    if (rulesmax) {
-        RulesWindows.style.width = '360px';
-        RulesWindows.style.height = '360px';
-        RulesWindows.style.left = '5%';
-        RulesWindows.style.top = '15%';
-        MaxRulesContent.style.width = '328px';
-        MaxRulesContent.style.height = '274px';
-        MaxRulesHeader.id = 'move_rules';
-        rulesmax = false;
-    } else {
-        RulesWindows.style.width = '100%';
-        RulesWindows.style.height = '100%';
-        RulesWindows.style.left = '0px';
-        RulesWindows.style.top = '0px';
-        MaxRulesContent.style.width = 'auto';
-        MaxRulesContent.style.height = '90%';
-        MaxRulesHeader.id = 'nomove';
-        rulesmax = true;
-    }
-});
-var schedulemax = false;
-let MaxSchedule = document.querySelector('.max_windows_schedule');
-let MaxScheduleContent = document.getElementById('schedule_content');
-let MaxScheduleHeader = document.getElementById('move_schedule');
-MaxSchedule.addEventListener('click', () => {
-    if (schedulemax) {
-        ScheduleWindows.style.width = '360px';
-        ScheduleWindows.style.height = '360px';
-        ScheduleWindows.style.left = '5%';
-        ScheduleWindows.style.top = '20%';
-        MaxScheduleContent.style.width = '328px';
-        MaxScheduleContent.style.height = '274px';
-        MaxScheduleHeader.id = 'move_schedule';
+// var aboutmax = false;
+// let MaxAbout = document.querySelector('.max_windows_about');
+// let MaxAboutContent = document.getElementById('about_content');
+// let MaxAboutHeader = document.getElementById('move_about');
+// MaxAbout.addEventListener('click', () => {
+//     if (aboutmax) {
+//         AboutWindows.style.width = '360px';
+//         AboutWindows.style.height = '360px';
+//         AboutWindows.style.left = '5%';
+//         AboutWindows.style.top = '5%';
+//         MaxAboutContent.style.width = 'auto';
+//         MaxAboutContent.style.height = '274px';
+//         MaxAboutHeader.id = 'move_about';
+//         aboutmax = false;
+//     } else {
+//         AboutWindows.style.width = '100%';
+//         AboutWindows.style.height = '100%';
+//         AboutWindows.style.left = '0px';
+//         AboutWindows.style.top = '0px';
+//         MaxAboutContent.style.width = 'auto';
+//         MaxAboutContent.style.height = '90%';
+//         MaxAboutHeader.id = 'nomove';
+//         aboutmax = true;
+//     }
+// });
+// var faqmax = false;
+// let MaxFAQ = document.querySelector('.max_windows_faq');
+// let MaxFAQContent = document.getElementById('faq_content');
+// let MaxFAQHeader = document.getElementById('move_faq');
+// MaxFAQ.addEventListener('click', () => {
+//     if (faqmax) {
+//         FAQWindows.style.width = '360px';
+//         FAQWindows.style.height = '360px';
+//         FAQWindows.style.left = '5%';
+//         FAQWindows.style.top = '10%';
+//         MaxFAQContent.style.width = '328px';
+//         MaxFAQContent.style.height = '274px';
+//         MaxFAQHeader.id = 'move_faq';
+//         faqmax = false;
+//     } else {
+//         FAQWindows.style.width = '100%';
+//         FAQWindows.style.height = '100%';
+//         FAQWindows.style.left = '0px';
+//         FAQWindows.style.top = '0px';
+//         MaxFAQContent.style.width = 'auto';
+//         MaxFAQContent.style.height = '90%';
+//         MaxFAQHeader.id = 'nomove';
+//         faqmax = true;
+//     }
+// });
+// var rulesmax = false;
+// let MaxRules = document.querySelector('.max_windows_rules');
+// let MaxRulesContent = document.getElementById('rules_content');
+// let MaxRulesHeader = document.getElementById('move_rules');
+// MaxRules.addEventListener('click', () => {
+//     if (rulesmax) {
+//         RulesWindows.style.width = '360px';
+//         RulesWindows.style.height = '360px';
+//         RulesWindows.style.left = '5%';
+//         RulesWindows.style.top = '15%';
+//         MaxRulesContent.style.width = '328px';
+//         MaxRulesContent.style.height = '274px';
+//         MaxRulesHeader.id = 'move_rules';
+//         rulesmax = false;
+//     } else {
+//         RulesWindows.style.width = '100%';
+//         RulesWindows.style.height = '100%';
+//         RulesWindows.style.left = '0px';
+//         RulesWindows.style.top = '0px';
+//         MaxRulesContent.style.width = 'auto';
+//         MaxRulesContent.style.height = '90%';
+//         MaxRulesHeader.id = 'nomove';
+//         rulesmax = true;
+//     }
+// });
+// var schedulemax = false;
+// let MaxSchedule = document.querySelector('.max_windows_schedule');
+// let MaxScheduleContent = document.getElementById('schedule_content');
+// let MaxScheduleHeader = document.getElementById('move_schedule');
+// MaxSchedule.addEventListener('click', () => {
+//     if (schedulemax) {
+//         ScheduleWindows.style.width = '360px';
+//         ScheduleWindows.style.height = '360px';
+//         ScheduleWindows.style.left = '5%';
+//         ScheduleWindows.style.top = '20%';
+//         MaxScheduleContent.style.width = '328px';
+//         MaxScheduleContent.style.height = '274px';
+//         MaxScheduleHeader.id = 'move_schedule';
         
-        schedulemax = false;
-    } else {
-        ScheduleWindows.style.width = '100%';
-        ScheduleWindows.style.height = '100%';
-        ScheduleWindows.style.left = '0px';
-        ScheduleWindows.style.top = '0px';
-        MaxScheduleContent.style.width = 'auto';
-        MaxScheduleContent.style.height = '90%';
-        MaxScheduleHeader.id = 'nomove';
-        schedulemax = true;
-    }
-});
-var awardsmax = false;
-let MaxAwards = document.querySelector('.max_windows_awards');
-let MaxAwardsContent = document.getElementById('awards_content');
-let MaxAwardsHeader = document.getElementById('move_awards');
-MaxAwards.addEventListener('click', () => {
-    if (awardsmax) {
-        AwardsWindows.style.width = '360px';
-        AwardsWindows.style.height = '360px';
-        AwardsWindows.style.left = '5%';
-        AwardsWindows.style.top = '25%';
-        MaxAwardsContent.style.width = '328px';
-        MaxAwardsContent.style.height = '274px';
-        MaxAwardsHeader.id = 'move_awards';
-        awardsmax = false;
-    } else {
-        AwardsWindows.style.width = '100%';
-        AwardsWindows.style.height = '100%';
-        AwardsWindows.style.left = '0px';
-        AwardsWindows.style.top = '0px';
-        MaxAwardsContent.style.width = 'auto';
-        MaxAwardsContent.style.height = '90%';
-        MaxAwardsHeader.id = 'nomove';
-        awardsmax = true;
-    }
-});
-var sponsorsmax = false;
-let MaxSponsors = document.querySelector('.max_windows_sponsors');
-let MaxSponsorsContent = document.getElementById('sponsor_content');
-let MaxSponsorsHeader = document.getElementById('move_sponsor');
-MaxSponsors.addEventListener('click', () => {
-    if (sponsorsmax) {
-        SponsorsWindows.style.width = '360px';
-        SponsorsWindows.style.height = '360px';
-        SponsorsWindows.style.left = '5%';
-        SponsorsWindows.style.top = '25%';
-        MaxSponsorsContent.style.width = '328px';
-        MaxSponsorsContent.style.height = '274px';
-        MaxSponsorsHeader.id = 'move_sponsor';
-        sponsorsmax = false;
-    } else {
-        SponsorsWindows.style.width = '100%';
-        SponsorsWindows.style.height = '100%';
-        SponsorsWindows.style.left = '0px';
-        SponsorsWindows.style.top = '0px';
-        MaxSponsorsContent.style.width = 'auto';
-        MaxSponsorsContent.style.height = '90%';
-        MaxSponsorsHeader.id = 'nomove';
-        sponsorsmax = true;
-    }
-});
-var socialmax = false;
-let MaxSocial = document.querySelector('.max_windows_social');
-let MaxSocialContent = document.getElementById('social_content');
-let MaxSocialHeader = document.getElementById('move_social');
-MaxSocial.addEventListener('click', () => {
-    if (socialmax) {
-        SocialWindows.style.width = '360px';
-        SocialWindows.style.height = '360px';
-        SocialWindows.style.left = '5%';
-        SocialWindows.style.top = '25%';
-        MaxSocialContent.style.width = '328px';
-        MaxSocialContent.style.height = '274px';
-        MaxSocialHeader.id = 'move_social';
-        socialmax = false;
-    } else {
-        SocialWindows.style.width = '100%';
-        SocialWindows.style.height = '100%';
-        SocialWindows.style.left = '0px';
-        SocialWindows.style.top = '0px';
-        MaxSocialContent.style.width = 'auto';
-        MaxSocialContent.style.height = '90%';
-        MaxSocialHeader.id = 'nomove';
-        socialmax = true;
-    }
-});
-var gamesmax = false;
-let MaxGames = document.querySelector('.max_windows_games');
-let MaxGamesContent = document.getElementById('games_content');
-let MaxGamesHeader = document.getElementById('move_games');
-MaxGames.addEventListener('click', () => {
-    if (gamesmax) {
-        GamesWindows.style.width = '360px';
-        GamesWindows.style.height = '360px';
-        GamesWindows.style.left = '5%';
-        GamesWindows.style.top = '25%';
-        MaxGamesContent.style.width = '328px';
-        MaxGamesContent.style.height = '274px';
-        MaxGamesHeader.id = 'move_games';
-        gamesmax = false;
-    } else {
-        GamesWindows.style.width = '100%';
-        GamesWindows.style.height = '100%';
-        GamesWindows.style.left = '0px';
-        GamesWindows.style.top = '0px';
-        MaxGamesContent.style.width = 'auto';
-        MaxGamesContent.style.height = '90%';
-        MaxGamesHeader.id = 'nomove';
-        gamesmax = true;
-    }
-});
-var regmax = false;
-let MaxReg = document.querySelector('.max_windows_reg');
-let MaxRegContent = document.getElementById('reg_content');
-let MaxRegHeader = document.getElementById('move_reg')
-MaxReg.addEventListener('click', () => {
-	if (regmax) {
-		RegWindows.style.width = '400px'
-		RegWindows.style.height = '500px'
-		RegWindows.style.left = '5%'
-		RegWindows.style.top = '25%'
-		MaxRegContent.style.width = '367px'
-		MaxRegContent.style.height = '430px'
-		MaxRegHeader.id = 'move_reg'
-		regmax = false
-	} else {
-		RegWindows.style.width = '100%'
-		RegWindows.style.height = '100%'
-		RegWindows.style.left = '0px'
-		RegWindows.style.top = '0px'
-		MaxRegContent.style.width = 'auto'
-		MaxRegContent.style.height = '90%'
-		MaxRegHeader.id = 'nomove'
-		regmax = true
-	}
-})
-var mapmax = false;
-let MaxMap = document.querySelector('.max_windows_map');
-let MaxMapContent = document.getElementById('map_content');
-let MaxMapHeader = document.getElementById('move_map');
-MaxMap.addEventListener('click', () => {
-    if (mapmax) {
-        MapWindows.style.width = '360px';
-        MapWindows.style.height = '360px';
-        MapWindows.style.left = '5%';
-        MapWindows.style.top = '5%';
-        MaxMapContent.style.width = 'auto';
-        MaxMapContent.style.height = '274px';
-        MaxMapHeader.id = 'move_about';
-        mapmax = false;
-    } else {
-        MapWindows.style.width = '100%';
-        MapWindows.style.height = '100%';
-        MapWindows.style.left = '0px';
-        MapWindows.style.top = '0px';
-        MaxMapContent.style.width = 'auto';
-        MaxMapContent.style.height = '90%';
-        MaxMapHeader.id = 'nomove';
-        mapmax = true;
-    }
-});
+//         schedulemax = false;
+//     } else {
+//         ScheduleWindows.style.width = '100%';
+//         ScheduleWindows.style.height = '100%';
+//         ScheduleWindows.style.left = '0px';
+//         ScheduleWindows.style.top = '0px';
+//         MaxScheduleContent.style.width = 'auto';
+//         MaxScheduleContent.style.height = '90%';
+//         MaxScheduleHeader.id = 'nomove';
+//         schedulemax = true;
+//     }
+// });
+// var awardsmax = false;
+// let MaxAwards = document.querySelector('.max_windows_awards');
+// let MaxAwardsContent = document.getElementById('awards_content');
+// let MaxAwardsHeader = document.getElementById('move_awards');
+// MaxAwards.addEventListener('click', () => {
+//     if (awardsmax) {
+//         AwardsWindows.style.width = '360px';
+//         AwardsWindows.style.height = '360px';
+//         AwardsWindows.style.left = '5%';
+//         AwardsWindows.style.top = '25%';
+//         MaxAwardsContent.style.width = '328px';
+//         MaxAwardsContent.style.height = '274px';
+//         MaxAwardsHeader.id = 'move_awards';
+//         awardsmax = false;
+//     } else {
+//         AwardsWindows.style.width = '100%';
+//         AwardsWindows.style.height = '100%';
+//         AwardsWindows.style.left = '0px';
+//         AwardsWindows.style.top = '0px';
+//         MaxAwardsContent.style.width = 'auto';
+//         MaxAwardsContent.style.height = '90%';
+//         MaxAwardsHeader.id = 'nomove';
+//         awardsmax = true;
+//     }
+// });
+// var sponsorsmax = false;
+// let MaxSponsors = document.querySelector('.max_windows_sponsors');
+// let MaxSponsorsContent = document.getElementById('sponsor_content');
+// let MaxSponsorsHeader = document.getElementById('move_sponsor');
+// MaxSponsors.addEventListener('click', () => {
+//     if (sponsorsmax) {
+//         SponsorsWindows.style.width = '360px';
+//         SponsorsWindows.style.height = '360px';
+//         SponsorsWindows.style.left = '5%';
+//         SponsorsWindows.style.top = '25%';
+//         MaxSponsorsContent.style.width = '328px';
+//         MaxSponsorsContent.style.height = '274px';
+//         MaxSponsorsHeader.id = 'move_sponsor';
+//         sponsorsmax = false;
+//     } else {
+//         SponsorsWindows.style.width = '100%';
+//         SponsorsWindows.style.height = '100%';
+//         SponsorsWindows.style.left = '0px';
+//         SponsorsWindows.style.top = '0px';
+//         MaxSponsorsContent.style.width = 'auto';
+//         MaxSponsorsContent.style.height = '90%';
+//         MaxSponsorsHeader.id = 'nomove';
+//         sponsorsmax = true;
+//     }
+// });
+// var socialmax = false;
+// let MaxSocial = document.querySelector('.max_windows_social');
+// let MaxSocialContent = document.getElementById('social_content');
+// let MaxSocialHeader = document.getElementById('move_social');
+// MaxSocial.addEventListener('click', () => {
+//     if (socialmax) {
+//         SocialWindows.style.width = '360px';
+//         SocialWindows.style.height = '360px';
+//         SocialWindows.style.left = '5%';
+//         SocialWindows.style.top = '25%';
+//         MaxSocialContent.style.width = '328px';
+//         MaxSocialContent.style.height = '274px';
+//         MaxSocialHeader.id = 'move_social';
+//         socialmax = false;
+//     } else {
+//         SocialWindows.style.width = '100%';
+//         SocialWindows.style.height = '100%';
+//         SocialWindows.style.left = '0px';
+//         SocialWindows.style.top = '0px';
+//         MaxSocialContent.style.width = 'auto';
+//         MaxSocialContent.style.height = '90%';
+//         MaxSocialHeader.id = 'nomove';
+//         socialmax = true;
+//     }
+// });
+// var gamesmax = false;
+// let MaxGames = document.querySelector('.max_windows_games');
+// let MaxGamesContent = document.getElementById('games_content');
+// let MaxGamesHeader = document.getElementById('move_games');
+// MaxGames.addEventListener('click', () => {
+//     if (gamesmax) {
+//         GamesWindows.style.width = '360px';
+//         GamesWindows.style.height = '360px';
+//         GamesWindows.style.left = '5%';
+//         GamesWindows.style.top = '25%';
+//         MaxGamesContent.style.width = '328px';
+//         MaxGamesContent.style.height = '274px';
+//         MaxGamesHeader.id = 'move_games';
+//         gamesmax = false;
+//     } else {
+//         GamesWindows.style.width = '100%';
+//         GamesWindows.style.height = '100%';
+//         GamesWindows.style.left = '0px';
+//         GamesWindows.style.top = '0px';
+//         MaxGamesContent.style.width = 'auto';
+//         MaxGamesContent.style.height = '90%';
+//         MaxGamesHeader.id = 'nomove';
+//         gamesmax = true;
+//     }
+// });
+// var regmax = false;
+// let MaxReg = document.querySelector('.max_windows_reg');
+// let MaxRegContent = document.getElementById('reg_content');
+// let MaxRegHeader = document.getElementById('move_reg')
+// MaxReg.addEventListener('click', () => {
+// 	if (regmax) {
+// 		RegWindows.style.width = '400px'
+// 		RegWindows.style.height = '500px'
+// 		RegWindows.style.left = '5%'
+// 		RegWindows.style.top = '25%'
+// 		MaxRegContent.style.width = '367px'
+// 		MaxRegContent.style.height = '430px'
+// 		MaxRegHeader.id = 'move_reg'
+// 		regmax = false
+// 	} else {
+// 		RegWindows.style.width = '100%'
+// 		RegWindows.style.height = '100%'
+// 		RegWindows.style.left = '0px'
+// 		RegWindows.style.top = '0px'
+// 		MaxRegContent.style.width = 'auto'
+// 		MaxRegContent.style.height = '90%'
+// 		MaxRegHeader.id = 'nomove'
+// 		regmax = true
+// 	}
+// })
+// var mapmax = false;
+// let MaxMap = document.querySelector('.max_windows_map');
+// let MaxMapContent = document.getElementById('map_content');
+// let MaxMapHeader = document.getElementById('move_map');
+// MaxMap.addEventListener('click', () => {
+//     if (mapmax) {
+//         MapWindows.style.width = '400px';
+//         MapWindows.style.height = '500px';
+//         MapWindows.style.left = '5%';
+//         MapWindows.style.top = '5%';
+//         MaxMapContent.style.width = '367px';
+//         MaxMapContent.style.height = '430px';
+//         MaxMapHeader.id = 'move_map';
+//         mapmax = false;
+//     } else {
+//         MapWindows.style.width = '100%';
+//         MapWindows.style.height = '100%';
+//         MapWindows.style.left = '0px';
+//         MapWindows.style.top = '0px';
+//         MaxMapContent.style.width = 'auto';
+//         MaxMapContent.style.height = '90%';
+//         MaxMapHeader.id = 'nomove';
+//         mapmax = true;
+//     }
+// });
 
 // show faq questions
 let questionFirst = document.getElementById('question_1');

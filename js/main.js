@@ -644,12 +644,12 @@ let MaxMapContent = document.getElementById("map_content");
 let MaxMapHeader = document.getElementById("move_map");
 MaxMap.addEventListener("click", () => {
   if (mapmax) {
-    MapWindows.style.width = "360px";
-    MapWindows.style.height = "360px";
+    MapWindows.style.width = "760px";
+    MapWindows.style.height = "500px";
     MapWindows.style.left = "5%";
     MapWindows.style.top = "5%";
-    MaxMapContent.style.width = "auto";
-    MaxMapContent.style.height = "274px";
+    MaxMapContent.style.width = "730px";
+    MaxMapContent.style.height = "415px";
     MaxMapHeader.id = "move_about";
     mapmax = false;
   } else {
