@@ -1106,6 +1106,12 @@ ul, ol, li {
   width: 730px;
     height: 415px;
 }
+
+
+.map {
+  width: 85%;
+  height: 85%;
+}
 @media screen and (max-width: 1200px) {
   .desktop_wins {
     top: 80px;
