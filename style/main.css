@@ -357,6 +357,8 @@ ul, ol, li {
         display: none; }
       .header .header_wrapper .menu_panel .windows .win_games {
         display: none; }
+      .header .header_wrapper .menu_panel .windows .win_map {
+          display: none; }
       .header .header_wrapper .menu_panel .windows .win_about_on {
         display: flex;
         border-color: #000 #fff #fff #000; }
@@ -384,6 +386,9 @@ ul, ol, li {
       .header .header_wrapper .menu_panel .windows .win_games_on {
         border-color: #000 #fff #fff #000;
         display: flex; }
+      .header .header_wrapper .menu_panel .windows .win_map_on {
+          border-color: #000 #fff #fff #000;
+          display: flex; }
       .header .header_wrapper .menu_panel .windows .win_hide {
         border-color: #fff #000 #000 #fff; }
     .header .header_wrapper .menu_panel .time_and_lang {
@@ -649,6 +654,10 @@ ul, ol, li {
   .shortcut_icons .shortcut_names {
     font-size: 14px; }
 
+
+
+
+
 .shortcut_about {
   top: 10px;
   bottom: 0;
@@ -702,6 +711,13 @@ ul, ol, li {
     bottom: 0;
     right: 0;
     left: 90px; }
+
+    .shortcut_map {
+      top: 330px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    }
 
 @media screen and (max-width: 720px) {
   .shortcut_icons {
@@ -759,7 +775,15 @@ ul, ol, li {
     top: 180px;
     bottom: 0;
     right: 0;
-    left: 90px; } }
+    left: 90px; }
+  
+    .shortcut_map {
+      top: 260px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    }
+  }
 .desktop_wins {
   position: fixed;
   top: 130px;
@@ -1071,6 +1095,9 @@ ul, ol, li {
 
 .desktop_win_games_on {
   display: block; }
+
+.desktop_win_map_on {
+    display: block; }
 
 @media screen and (max-width: 1200px) {
   .desktop_wins {

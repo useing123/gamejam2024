@@ -70,7 +70,46 @@
                     class="shortcut_names"></a>
                     <p class="shortcut_names">Nomad Games</p>
             </div>
+            <div class="shortcut_map shortcut_icons" id="map_sh">
+                <img src="../img/map2.png" alt="map" class="shortcut_img">
+                <p class="shortcut_names">Map</p>
+            </div>
 
+            
+            
+
+
+            <div class="desktop_win_map desktop_wins">
+                <div class="win_header" id="move_map">
+                    <div class="win_icon_text">
+                        <img src="../img/map2.png" alt="" class="win_header_icon">
+                        <p class="win_header_way">C:/satbayev/dev.hub/map</p>
+                    </div>
+                    <div class="win_control_btns">
+                        <img src="../img/min.png" alt="minimize window" class="min_windows_map">
+                        <img src="../img/max.png" alt="maximize window" class="max_windows_map">
+                        <img src="../img/close.png" alt="close window" class="close_windows_map">
+                    </div>
+                </div>
+                <div class="win_content" id="map_content">
+                    <div>
+                        <img src="../img/map.png" alt="map">
+                        
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="win_footer" id="map_footer">
+                    <div class="win_footer_line long_line"></div>
+                    <div class="short_lines">
+                        <div class="win_footer_line short_line"></div>
+                        <div class="win_footer_line short_line"></div>
+                    </div>
+                </div>
+            </div>
 
             <div class="desktop_win_about desktop_wins">
                 <div class="win_header" id="move_about">
@@ -935,6 +974,11 @@
                             <img src="../img/games.png" alt="games">
                             <p>Nomad Games</p>
                         </div>
+                        <div class="win_map  general_win">
+                            <img src="../img/map2.png" alt="map">
+                            <p>Map</p>
+                        </div>
+                    
 
                     </div>
                     <div class="time_and_lang">
@@ -986,6 +1030,9 @@
                         </li>
                         <li class="games" id="games"><img src="../img/games.png" alt="games" class="prog_list_icons">
                             <p>Nomad Games</p>
+                        </li>
+                        <li class="map" id="map"><img src="../img/space-invaders.png" alt="map" class="prog_list_icons">
+                            <p>Map</p>
                         </li>
                     </ul>
                 </div>
@@ -1194,8 +1241,8 @@
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы
 
-            // Собираем данные из формы
-            const formData = new FormData(this);
+            // Собираем данные из формы                                                                     
+            const formData = new FormData(this);        
 
             // Добавляем время отправки
             const submissionTime = new Date().toISOString(); // Формат ISO: YYYY-MM-DDTHH:mm:ss.sssZ

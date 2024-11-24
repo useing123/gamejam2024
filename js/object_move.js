@@ -26,6 +26,9 @@ let MoveWinSocial = document.querySelector('.desktop_win_social');
 let MoveGames = document.getElementById('move_games');
 let MoveWinGames = document.querySelector('.desktop_win_games');
 
+let MoveMap = document.getElementById('move_map');
+let MoveWinMap = document.querySelector('.desktop_win_map');
+
 DragWindows(MoveAbout, MoveWinAbout);
 DragWindows(MoveFAQ, MoveWinFAQ);
 DragWindows(MoveRules, MoveWinRules);
@@ -35,6 +38,7 @@ DragWindows(MoveAwards, MoveWinAwards);
 DragWindows(MoveSponsor, MoveWinSponsor);
 DragWindows(MoveSocial, MoveWinSocial);
 DragWindows(MoveGames, MoveWinGames);
+DragWindows(MoveMap, MoveWinMap);
 
 function DragWindows(header, windows) {
 	// Добавляем обработчик только для заголовка
@@ -111,6 +115,7 @@ let MoveAwardsSh = document.getElementById('awards_sh');
 let MoveSponsorsSh = document.getElementById('sponsor_sh');
 let MoveSocialSh = document.getElementById('social_sh');
 let MoveGamesSh = document.getElementById('games_sh');
+let MoveMapSh = document.getElementById('map_sh');
 DragShortcutElem(MoveAboutSh);
 DragShortcutElem(MoveFAQSh);
 DragShortcutElem(MoveRulesSh);
@@ -120,6 +125,7 @@ DragShortcutElem(MoveAwardsSh);
 DragShortcutElem(MoveSponsorsSh);
 DragShortcutElem(MoveSocialSh);
 DragShortcutElem(MoveGamesSh);
+DragShortcutElem(MoveMapSh);
 
 function DragShortcutElem(elem){
     elem.ondragstart = () => false;
