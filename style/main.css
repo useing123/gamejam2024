@@ -791,7 +791,7 @@ ul, ol, li {
   right: 0;
   bottom: 0;
   z-index: 2;
-  width: 500px;
+  width: 720px;
   height: 400px;
   background-color: #bdbebd;
   padding: 2px;
@@ -841,7 +841,7 @@ ul, ol, li {
     text-align: justify;
     line-height: 18px;
     border-color: #000 #fff #fff #000;
-    width: 466px;
+    width: 680px;
     height: 312px; }
     .desktop_wins .win_content .win_content_text {
       margin: 5px 0; }
@@ -1104,7 +1104,7 @@ ul, ol, li {
 
 .desktop_win_map_on .win_content {
   width: 730px;
-    height: 415px;
+  height: 415px;
 }
 
 
