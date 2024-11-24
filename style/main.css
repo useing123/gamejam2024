@@ -433,7 +433,7 @@ ul, ol, li {
               justify-content: space-between; }
               .menu_windows .menu_windows_wrapper .name_line {
                 width: 35px;
-                height: 370px;
+                height: 410px;
                 background-color: #ba0b0b;
                 background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
                 text-align: start; }
@@ -1131,7 +1131,12 @@ ul, ol, li {
 
   .desktop_win_awards {
     top: 160px;
-    left: 350px; } }
+    left: 350px; } 
+  
+  
+
+  }
+
 
     
 
