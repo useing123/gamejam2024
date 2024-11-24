@@ -450,7 +450,7 @@ ul, ol, li {
                   list-style-type: none; }
                   .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
                     padding: 5px;
-                    margin-bottom: 0px;
+                    margin-bottom: 5px;
                     display: flex;
                     align-items: center;
                     cursor: pointer; }
@@ -890,10 +890,10 @@ ul, ol, li {
         text-decoration: none; }
         .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links .win_content_img {
           width: auto;
-          height: 60px; }
+          height: 85%; }
         .desktop_wins .win_content_inner_elems .win_content_icons .win_content_links .win_content_img_main_sponsor {
           width: auto;
-          height: 110px; }
+          height: 100%; }
   .desktop_wins .win_footer {
     display: flex;
     justify-content: space-between; }
