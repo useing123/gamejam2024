@@ -638,31 +638,59 @@ MaxReg.addEventListener("click", () => {
     regmax = true;
   }
 });
+
 var mapmax = false;
 let MaxMap = document.querySelector(".max_windows_map");
 let MaxMapContent = document.getElementById("map_content");
 let MaxMapHeader = document.getElementById("move_map");
-MaxMap.addEventListener("click", () => {
-  if (mapmax) {
-    MapWindows.style.width = "760px";
-    MapWindows.style.height = "500px";
-    MapWindows.style.left = "5%";
-    MapWindows.style.top = "5%";
-    MaxMapContent.style.width = "730px";
-    MaxMapContent.style.height = "415px";
-    MaxMapHeader.id = "move_about";
-    mapmax = false;
-  } else {
-    MapWindows.style.width = "100%";
-    MapWindows.style.height = "100%";
-    MapWindows.style.left = "0px";
-    MapWindows.style.top = "0px";
-    MaxMapContent.style.width = "auto";
-    MaxMapContent.style.height = "90%";
-    MaxMapHeader.id = "nomove";
-    mapmax = true;
-  }
-});
+const windowOuterWidth = window.outerWidth
+const windowOuterHeight = window.outerHeight
+if (windowOuterHeight >= 480 && windowOuterWidth >= 360) {
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "360px";
+      MapWindows.style.height = "360px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "328px";
+      MaxMapContent.style.height = "274px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+} else {
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "760px";
+      MapWindows.style.height = "500px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "730px";
+      MaxMapContent.style.height = "415px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+}
+
 
 // show faq questions
 let questionFirst = document.getElementById("question_1");
