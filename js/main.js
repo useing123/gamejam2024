@@ -643,9 +643,9 @@ var mapmax = false;
 let MaxMap = document.querySelector(".max_windows_map");
 let MaxMapContent = document.getElementById("map_content");
 let MaxMapHeader = document.getElementById("move_map");
-const windowOuterWidth = window.outerWidth
-const windowOuterHeight = window.outerHeight
-if (windowOuterHeight >= 480 && windowOuterWidth >= 360) {
+const windowOuterWidth = window.innerWidth
+const windowOuterHeight = window.innerHeight
+if (windowOuterHeight <= 480 && windowOuterWidth <= 360) {
   MaxMap.addEventListener("click", () => {
     if (mapmax) {
       MapWindows.style.width = "360px";
@@ -668,6 +668,10 @@ if (windowOuterHeight >= 480 && windowOuterWidth >= 360) {
     }
   });
 } else {
+  
+
+
+ 
   MaxMap.addEventListener("click", () => {
     if (mapmax) {
       MapWindows.style.width = "760px";
@@ -689,7 +693,111 @@ if (windowOuterHeight >= 480 && windowOuterWidth >= 360) {
       mapmax = true;
     }
   });
+  
 }
+
+if (windowOuterHeight <= 660 && windowOuterWidth <= 380) {
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "360px";
+      MapWindows.style.height = "360px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "328px";
+      MaxMapContent.style.height = "274px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+} else {
+  
+
+
+ 
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "760px";
+      MapWindows.style.height = "500px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "730px";
+      MaxMapContent.style.height = "415px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+  
+}
+
+if (windowOuterHeight <= 1000 && windowOuterWidth <= 500) {
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "360px";
+      MapWindows.style.height = "360px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "328px";
+      MaxMapContent.style.height = "274px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+} else {
+  
+
+
+ 
+  MaxMap.addEventListener("click", () => {
+    if (mapmax) {
+      MapWindows.style.width = "760px";
+      MapWindows.style.height = "500px";
+      MapWindows.style.left = "5%";
+      MapWindows.style.top = "5%";
+      MaxMapContent.style.width = "730px";
+      MaxMapContent.style.height = "415px";
+      MaxMapHeader.id = "move_about";
+      mapmax = false;
+    } else {
+      MapWindows.style.width = "100%";
+      MapWindows.style.height = "100%";
+      MapWindows.style.left = "0px";
+      MapWindows.style.top = "0px";
+      MaxMapContent.style.width = "auto";
+      MaxMapContent.style.height = "90%";
+      MaxMapHeader.id = "nomove";
+      mapmax = true;
+    }
+  });
+  
+}
+
 
 
 // show faq questions
