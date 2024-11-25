@@ -544,11 +544,11 @@ let MaxSponsorsContent = document.getElementById("sponsor_content");
 let MaxSponsorsHeader = document.getElementById("move_sponsor");
 MaxSponsors.addEventListener("click", () => {
   if (sponsorsmax) {
-    SponsorsWindows.style.width = "360px";
+    SponsorsWindows.style.width = "720px";
     SponsorsWindows.style.height = "360px";
     SponsorsWindows.style.left = "5%";
     SponsorsWindows.style.top = "25%";
-    MaxSponsorsContent.style.width = "328px";
+    MaxSponsorsContent.style.width = "680px";
     MaxSponsorsContent.style.height = "274px";
     MaxSponsorsHeader.id = "move_sponsor";
     sponsorsmax = false;
