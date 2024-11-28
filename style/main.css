@@ -1109,8 +1109,8 @@ ul, ol, li {
 
 
 .map {
-  width: 85%;
-  height: 85%;
+  width: 620;
+  height: 352;
 }
 @media screen and (max-width: 1200px) {
   .desktop_wins {
