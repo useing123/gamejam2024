@@ -656,11 +656,11 @@ let MaxRegHeader = document.getElementById("move_reg");
 MaxReg.addEventListener("click", () => {
   if (regmax) {
     RegWindows.style.width = "400px";
-    RegWindows.style.height = "500px";
+    RegWindows.style.height = "540px";
     RegWindows.style.left = "5%";
     RegWindows.style.top = "25%";
     MaxRegContent.style.width = "367px";
-    MaxRegContent.style.height = "430px";
+    MaxRegContent.style.height = "470px";
     MaxRegHeader.id = "move_reg";
     regmax = false;
   } else {
