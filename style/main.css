@@ -802,6 +802,17 @@ ul, ol, li {
         left: 90px;
     }
   }
+
+
+
+  /* .desktop_wins .desktop_win_registration  {
+  width: 50%;
+  height: 400px;
+}
+.win_form_content {
+  width: 50%;
+  height: 312px;
+} */
 .desktop_wins {
   position: fixed;
   top: 130px;
@@ -969,7 +980,8 @@ ul, ol, li {
 
 
         .desktop_win_registration {
-          height: 500px;
+          height: 530px;
+          width: 400px;
           top: 150px;
           left: 400px; }
           .desktop_win_registration .win_form_content {
@@ -979,7 +991,8 @@ ul, ol, li {
             border-color: #fff #000 #000 #fff;
             color: #000;
             overflow: hidden;
-            height: 430px; }
+            height: 460px; 
+            width: 366px;}
             .desktop_win_registration .win_form_content .win_reg_text {
               font-size: 18px;
               margin-bottom: 10px; }
