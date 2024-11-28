@@ -16,7 +16,7 @@ document.body.onload = function(){
             loader.classList.add('off_loader');
             container.style.display = 'block';
         };
-    }, 0);
+    }, 6000);
 };
 
 // document.addEventListener("DOMContentLoaded", function() {
