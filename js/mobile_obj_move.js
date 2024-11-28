@@ -9,6 +9,7 @@ let TouchMoveSponsorsSh = document.getElementById('sponsor_sh');
 let TouchMoveSocialSh = document.getElementById('social_sh');
 let TouchMoveGamesSh = document.getElementById('games_sh');
 let TouchMoveMapSh = document.getElementById('map_sh');
+let TouchMovePolSh = document.getElementById('pol_sh');
 
 Drag(TouchMoveAboutSh);
 Drag(TouchMoveFAQSh);
@@ -20,6 +21,7 @@ Drag(TouchMoveSponsorsSh);
 Drag(TouchMoveSocialSh);
 Drag(TouchMoveGamesSh);
 Drag(TouchMoveMapSh);
+Drag(TouchMovePolSh);
 
 /*Ловим касание*/
 function Drag(elem) {
@@ -52,6 +54,7 @@ let TouchMoveWinGames = document.querySelector('.desktop_win_games');
 let TouchMoveHeaderGames = document.getElementById('move_games');
 let TouchMoveWinMap = document.querySelector('.desktop_win_map');
 let TouchMoveHeaderMap = document.getElementById('move_map');
+let TouchMoveHeaderPol = document.getElementById('move_pol');
 
 DragWin(TouchMoveWinAbout, TouchMoveHeaderAbout);
 DragWin(TouchMoveWinFaq, TouchMoveHeaderFaq);
@@ -63,6 +66,7 @@ DragWin(TouchMoveWinSponsor, TouchMoveHeaderSponsor);
 DragWin(TouchMoveWinSocial, TouchMoveHeaderSocial);
 DragWin(TouchMoveWinGames, TouchMoveHeaderGames);
 DragWin(TouchMoveWinMap, TouchMoveHeaderMap);
+DragWin(TouchMoveWinPol, TouchMoveHeaderPol);
 
 function DragWin(elem, header) {
     header.addEventListener('touchstart', () => {

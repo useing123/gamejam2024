@@ -43,6 +43,7 @@ let SponsorIcon = document.getElementById("sponsor");
 let SocialIcon = document.getElementById("social");
 let GamesIcon = document.getElementById("games");
 let MapIcon = document.getElementById("map");
+let PolIcon = document.getElementById("pol");
 
 let WinAbout = document.querySelector(".win_about");
 let WinFAQ = document.querySelector(".win_faq ");
@@ -54,6 +55,7 @@ let WinSponsors = document.querySelector(".win_sponsors");
 let WinSocial = document.querySelector(".win_social");
 let WinGames = document.querySelector(".win_games");
 let WinMap = document.querySelector(".win_map");
+let WinPol = document.querySelector(".win_pol");
 
 // hide windows action
 
@@ -97,6 +99,10 @@ WinMap.addEventListener("click", () => {
   WinMap.classList.toggle("win_hide");
   MapWindows.classList.toggle("desktop_win_map_on");
 });
+// WinPol.addEventListener("click", () => {
+//   WinPol.classList.toggle("win_hide");
+//   PolWindows.classList.toggle("desktop_win_pol_on");
+// });
 
 // values of desktop action
 let AboutWindows = document.querySelector(".desktop_win_about");
@@ -109,6 +115,7 @@ let SponsorsWindows = document.querySelector(".desktop_win_sponsors");
 let SocialWindows = document.querySelector(".desktop_win_social");
 let GamesWindows = document.querySelector(".desktop_win_games");
 let MapWindows = document.querySelector(".desktop_win_map");
+let PolWindows = document.querySelector(".desktop_win_pol");
 
 AboutIcon.addEventListener("click", () => {
   WinBtn.classList.remove("win_btn_clicked");
@@ -173,6 +180,13 @@ MapIcon.addEventListener("click", () => {
   WinMap.classList.remove("win_hide");
   MapWindows.classList.add("desktop_win_map_on");
 });
+PolIcon.addEventListener("click", () => {
+  WinBtn.classList.remove("win_btn_clicked");
+  menuWindows.classList.remove("menu_windows_on");
+  WinPol.classList.add("win_pol_on");
+  WinPol.classList.remove("win_hide");
+  PolWindows.classList.add("desktop_win_pol_on");
+});
 
 let SponsorList = document.querySelector(".sponsor_prog_list");
 let ArrowBackIcon = document.getElementById("back");
@@ -194,6 +208,7 @@ let SponsorShortcut = document.getElementById("sponsor_sh");
 let SocialShortcut = document.getElementById("social_sh");
 let GamesShortcut = document.getElementById("games_sh");
 let MapShortcut = document.getElementById("map_sh");
+let PolShortcut = document.getElementById("pol_sh");
 
 AboutShortcut.addEventListener("dblclick", () => {
   WinAbout.classList.add("win_about_on");
@@ -244,6 +259,11 @@ MapShortcut.addEventListener("dblclick", () => {
   WinMap.classList.add("win_map_on");
   WinMap.classList.remove("win_hide");
   MapWindows.classList.add("desktop_win_map_on");
+});
+PolShortcut.addEventListener("dblclick", () => {
+  WinPol.classList.add("win_pol_on");
+  WinPol.classList.remove("win_hide");
+  PolWindows.classList.add("desktop_win_pol_on");
 });
 
 AboutShortcut.addEventListener("mousedown", () => {
@@ -306,6 +326,12 @@ MapShortcut.addEventListener("mousedown", () => {
 MapShortcut.addEventListener("mouseleave", () => {
   MapShortcut.style.border = "";
 });
+PolShortcut.addEventListener("mousedown", () => {
+  PolShortcut.style.border = "1px dashed grey";
+});
+PolShortcut.addEventListener("mouseleave", () => {
+  PolShortcut.style.border = "";
+});
 
 // close windows
 let CloseAbout = document.querySelector(".close_windows_about");
@@ -358,6 +384,11 @@ CloseMap.addEventListener("click", () => {
   MapWindows.classList.remove("desktop_win_map_on");
   WinMap.classList.remove("win_map_on");
 });
+let ClosePol = document.querySelector(".close_windows_pol");
+ClosePol.addEventListener("click", () => {
+  PolWindows.classList.remove("desktop_win_pol_on");
+  WinPol.classList.remove("win_pol_on");
+});
 
 //minimize windows
 let MinAbout = document.querySelector(".min_windows_about");
@@ -409,6 +440,11 @@ let MinMap = document.querySelector(".min_windows_map");
 MinMap.addEventListener("click", () => {
   MapWindows.classList.remove("desktop_win_map_on");
   WinMap.classList.add("win_hide");
+});
+let MinPol = document.querySelector(".min_windows_pol");
+MinPol.addEventListener("click", () => {
+  PolWindows.classList.remove("desktop_win_pol_on");
+  WinPol.classList.add("win_hide");
 });
 
 //maximize windows
@@ -797,6 +833,76 @@ if (windowOuterHeight <= 1000 && windowOuterWidth <= 500) {
   });
   
 }
+
+var polmax = false;
+let MaxPol = document.querySelector(".max_windows_pol");
+let MaxPolContent = document.getElementById("pol_content");
+let MaxPolHeader = document.getElementById("move_pol");
+
+
+if (windowOuterHeight <= 1000 && windowOuterWidth <= 500 || windowOuterHeight <= 660 && windowOuterWidth <= 380 || windowOuterHeight <= 480 && windowOuterWidth <= 360) {
+  MaxPol.addEventListener("click", () => {
+    if (polmax) {
+      PolWindows.style.width = "360px";
+      PolWindows.style.height = "360px";
+      PolWindows.style.left = "5%";
+      PolWindows.style.top = "5%";
+      MaxPolContent.style.width = "auto";
+      MaxPolContent.style.height = "274px";
+      MaxPolHeader.id = "move_pol";
+      polmax = false;
+    } else {
+      PolWindows.style.width = "100%";
+      PolWindows.style.height = "100%";
+      PolWindows.style.left = "0px";
+      PolWindows.style.top = "0px";
+      MaxPolContent.style.width = "auto";
+      MaxPolContent.style.height = "90%";
+      MaxPolHeader.id = "nomove";
+      polmax = true;
+    }
+  });
+} else {
+  
+
+
+  MaxPol.addEventListener("click", () => {
+    if (polmax) {
+      PolWindows.style.width = "720px";
+      PolWindows.style.height = "600px";
+      PolWindows.style.left = "5%";
+      PolWindows.style.top = "10%";
+      MaxPolContent.style.width = "96%";
+      MaxPolContent.style.height = "512px";
+      MaxPolHeader.id = "move_pol";
+      polmax = false;
+    } else {
+      PolWindows.style.width = "100%";
+      PolWindows.style.height = "100%";
+      PolWindows.style.left = "0px";
+      PolWindows.style.top = "0px";
+      MaxPolContent.style.width = "auto";
+      MaxPolContent.style.height = "90%";
+      MaxPolHeader.id = "nomove";
+      polmax = true;
+    }
+  });
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
