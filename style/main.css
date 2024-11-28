@@ -359,6 +359,8 @@ ul, ol, li {
         display: none; }
       .header .header_wrapper .menu_panel .windows .win_map {
           display: none; }
+          .header .header_wrapper .menu_panel .windows .win_pol {
+            display: none; }
       .header .header_wrapper .menu_panel .windows .win_about_on {
         display: flex;
         border-color: #000 #fff #fff #000; }
@@ -389,6 +391,9 @@ ul, ol, li {
       .header .header_wrapper .menu_panel .windows .win_map_on {
           border-color: #000 #fff #fff #000;
           display: flex; }
+          .header .header_wrapper .menu_panel .windows .win_pol_on {
+            border-color: #000 #fff #fff #000;
+            display: flex; }
       .header .header_wrapper .menu_panel .windows .win_hide {
         border-color: #fff #000 #000 #fff; }
     .header .header_wrapper .menu_panel .time_and_lang {
@@ -719,6 +724,12 @@ ul, ol, li {
         left: 90px;
     }
 
+    .shortcut_pol {
+      top: 430px;
+      bottom: 0;
+      right: 0;
+      left: 90px; }
+
 @media screen and (max-width: 720px) {
   .shortcut_icons {
     width: 80px;
@@ -779,6 +790,13 @@ ul, ol, li {
   
     .shortcut_map {
       top: 260px;
+        bottom: 0;
+        right: 0;
+        left: 90px;
+    }
+
+    .shortcut_pol {
+      top: 340px;
         bottom: 0;
         right: 0;
         left: 90px;
@@ -1101,6 +1119,9 @@ ul, ol, li {
     height: 500px;
     display: block; }
 
+    .desktop_win_pol_on {
+      display: block; }
+
 
 .desktop_win_map_on .win_content {
   width: 730px;
@@ -1112,6 +1133,21 @@ ul, ol, li {
   width: 620;
   height: 352;
 }
+
+
+.desktop_win_pol {
+  width: 720px;
+  height: 600px;
+  top: 1%;
+}
+
+.desktop_win_pol_on .win_content {
+  height: 512px;
+  width: 96%;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .desktop_wins {
     top: 80px;
@@ -1230,6 +1266,18 @@ ul, ol, li {
     .desktop_wins .win_content {
       width: 268px;
       height: 212px; }
+
+      /* .desktop_win_pol {
+        width: 300px;
+        height: 300px;
+      } */
+      
+      /* .desktop_win_pol_on .win_content {
+        height: 512px;
+        width: 96%;
+      } */
+
+
 
   .desktop_win_registration {
     width: 350px;
@@ -2051,6 +2099,10 @@ ul, ol, li {
   display: block;
   color: #e4d656;
   margin-left: 10px; }
+
+iframe {
+  margin: 0;
+}
 
 
 /* desktop_wins .win_content {
