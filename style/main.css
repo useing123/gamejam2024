@@ -56,6 +56,10 @@
   .win_stasus {
     display: none;
   }
+
+  .win_сlose {
+    display: none;
+  }
   .text2 {
     display: block;
     text-align: center;

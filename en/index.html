@@ -725,6 +725,18 @@
                     <img src="../img/qr.jpg" class="qr">
                 </div>
             </div>
+
+            <div class="win_сlose">
+                <div class="text2">
+                    <h2 class="text1">Registration is closed</h3>
+                        <h3 class="text1">Subscribe to our Telegram channel to stay updated on all events:</h3>
+                    
+                </div>
+                <div class="tg">
+                    <p class="text1"><a href="https://t.me/+MnNWWqSNPLBjNzZi">Telegram Channel</a></p>
+                    <img src="../img/qr.jpg" class="qr">
+                </div>
+            </div>
         </div>
 
 
@@ -1166,7 +1178,7 @@
                     </div>
                     <div class="time_and_lang">
                         <div class="lang">
-                                <img src="../img/rus.png" alt="rus" class="ch_lang" title="Russian">
+                                <img src="../img/kaz.png" alt="rus" class="ch_lang" title="Russian">
                             </div>
                         <div class="cloak">
                             <div class="time"></div>
@@ -1422,6 +1434,17 @@
         game16.addEventListener('click', () => {
             game16A.classList.toggle('text_answer_on');
         });
+
+
+        const today = new Date();
+
+            const timereal = today.getDate(); 
+
+            if (timereal >= 3) {
+                document.getElementById('reg_content').style.display = 'none';
+                    
+                document.querySelector('.win_сlose').style.display = 'block';
+            }
 
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы

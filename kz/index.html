@@ -711,6 +711,18 @@
                     <img src="../img/qr.jpg" class="qr">
                 </div>
             </div>
+
+            <div class="win_сlose">
+                <div class="text2">
+                    <h2 class="text1">Тіркелу жабылда</h3>
+                        <h3 class="text1">Барлық оқиғалардан хабардар болу үшін біздің телеграм-каналға жазылыңыз</h3>
+                    
+                </div>
+                <div class="tg">
+                    <p class="text1"><a href="https://t.me/+MnNWWqSNPLBjNzZi">Телеграм канал</a></p>
+                    <img src="../img/qr.jpg" class="qr">
+                </div>
+            </div>
         </div>
 
 
@@ -1041,8 +1053,8 @@
                         Кокпар
                     </p>
                     <p class="win_content_text text_answer" id="game_15_answer">
-                        <span class="show_text_answer">-</span>
-                        Қазақтың ұлттық ойыны көкпарда жайылымда көршілес ауылдардың жігіттері қатысатын. Бұл сайыс күшті, ептілікті, дәлдікті, және ер-тоқымда шеберлікпен отыруды сынайтын сынақ болды. 
+                        <span class="show_text_answer">-</span>     
+                      Қазақтың ұлттық ойыны көкпарда жайылымда көршілес ауылдардың жігіттері қатысатын. Бұл сайыс күшті, ептілікті, дәлдікті, және ер-тоқымда шеберлікпен отыруды сынайтын сынақ болды. 
                         Сайыс күні барлық қатысушылар мен көрермендер далаға жиналатын. 10-20 метр қашықтықта жарысушыларға қойдың терісі лақтырылып, соның артынан басталатын көкпар таң атқаннан кешке дейін созылуы мүмкін еді.
                     </p>
                     <p class="win_content_text text_question" id="game_16">
@@ -1382,6 +1394,16 @@
             game16A.classList.toggle('text_answer_on');
         });
 
+
+        const today = new Date();
+
+            const timereal = today.getDate(); 
+
+            if (timereal >= 3) {
+                document.getElementById('reg_content').style.display = 'none';
+                    
+                document.querySelector('.win_сlose').style.display = 'block';
+            }
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы
 
@@ -1398,6 +1420,16 @@
                 urlEncodedData.append(key, value);
             });
 
+            const today = new Date();
+
+            const timereal = today.getDate(); 
+
+            if (timereal >= 3) {
+                console.log("Сегодня 4 декабря! Запускаем функцию.");
+                document.getElementById('reg_content').style.display = 'none';
+                    
+                document.querySelector('.win_сlose').style.display = 'block';
+            }   
             try {
                 const response = await fetch("https://script.google.com/macros/s/AKfycbyJCoFZXS4IW7ZarX54B1rCJdaJtG30oYD39iRTz-oIMAx4P4PNIhMEKuBV0tuMn2kH/exec", {
                     method: "POST",
