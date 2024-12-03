@@ -767,6 +767,18 @@
                     <img src="../img/qr.jpg" class="qr">
                 </div>
             </div>
+
+            <div class="win_сlose">
+                <div class="text2">
+                    <h2 class="text1">Регистрация закрыта</h3>
+                    <h3 class="text1">Подпишитесь на наш телеграм-канал, чтобы быть в курсе всех событий:</h3>
+                    
+                </div>
+                <div class="tg">
+                    <p class="text1"><a href="https://t.me/+MnNWWqSNPLBjNzZi">Телеграм канал</a></p>
+                    <img src="../img/qr.jpg" class="qr">
+                </div>
+            </div>
         </div>
 
 
@@ -1369,6 +1381,7 @@
                 </div>
                 <button type="submit" class="submit_content">OK</button>
             </div>
+
         </div>
     </div>
     </div>
@@ -1492,6 +1505,21 @@
             game16A.classList.toggle('text_answer_on');
         });
 
+
+
+
+        const today = new Date();
+
+            const timereal = today.getDate(); 
+
+            if (timereal >= 3) {
+                console.log("Сегодня 4 декабря! Запускаем функцию.");
+                document.getElementById('reg_content').style.display = 'none';
+                    
+                document.querySelector('.win_сlose').style.display = 'block';
+            }
+
+
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы
 
@@ -1507,6 +1535,10 @@
             formData.forEach((value, key) => {
                 urlEncodedData.append(key, value);
             });
+
+            
+
+            
 
             try {
                 const response = await fetch("https://script.google.com/macros/s/AKfycbyJCoFZXS4IW7ZarX54B1rCJdaJtG30oYD39iRTz-oIMAx4P4PNIhMEKuBV0tuMn2kH/exec", {
@@ -1530,6 +1562,8 @@
                 console.error("Ошибка сети:", error);
                 alert("Ошибка сети. Пожалуйста, проверьте ваше соединение и попробуйте снова.");
             }
+
+            
         });
     </script>
 </body>
