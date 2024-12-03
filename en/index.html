@@ -11,7 +11,7 @@
     <meta name="copyright" Content="the Hub ICA">
     <meta name="description" Content="Республиканский Game Jam в Казахстане от Satbayev University и the HUB">
     <meta name="keywords"
-        Content="алматы, almaty, game jam, гейм джем, игра, иры, университет, разработка игр, конкурс, прибыль, хакатон, hackathon, satbayev university, su, сатбаев, сатпаев, компьютеры, пк, ноутбуки, 2д, 3д, юнити, хаб, зе хаб, thehub, the hub, ретро, инди, издатели, издательство, грант, обучение, развитие, hub, 3d, 2d, art, development, indie, fun, веселье, приз">
+        Content="алматы, almaty, game jam, гейм джем, игра, иры, университет, разработка игр, конкурс, хакатон, hackathon, satbayev university, su, сатбаев, сатпаев, компьютеры, пк, ноутбуки, 2д, 3д, юнити, хаб, зе хаб, thehub, the hub, ретро, инди, издатели, издательство, грант, обучение, развитие, hub, 3d, 2d, art, development, indie, fun, веселье, приз">
     <link rel="shortcut icon" href="../img/gamej2.png" type="image/x-icon">
     <meta name="Publisher-Email" Content="bighub.info@gmail.com">
     <meta name="robots" content="Index,follow">
@@ -725,6 +725,18 @@
                     <img src="../img/qr.jpg" class="qr">
                 </div>
             </div>
+
+            <div class="win_сlose">
+                <div class="text2">
+                    <h2 class="text1">Registration is closed</h3>
+                        <h3 class="text1">Subscribe to our Telegram channel to stay updated on all events:</h3>
+                    
+                </div>
+                <div class="tg">
+                    <p class="text1"><a href="https://t.me/+MnNWWqSNPLBjNzZi">Telegram Channel</a></p>
+                    <img src="../img/qr.jpg" class="qr">
+                </div>
+            </div>
         </div>
 
 
@@ -1166,7 +1178,7 @@
                     </div>
                     <div class="time_and_lang">
                         <div class="lang">
-                                <img src="../img/rus.png" alt="rus" class="ch_lang" title="Russian">
+                                <img src="../img/kaz.png" alt="rus" class="ch_lang" title="Russian">
                             </div>
                         <div class="cloak">
                             <div class="time"></div>
@@ -1422,6 +1434,17 @@
         game16.addEventListener('click', () => {
             game16A.classList.toggle('text_answer_on');
         });
+
+
+        const today = new Date();
+
+            const timereal = today.getDate(); 
+
+            if (timereal >= 3) {
+                document.getElementById('reg_content').style.display = 'none';
+                    
+                document.querySelector('.win_сlose').style.display = 'block';
+            }
 
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
             event.preventDefault();  // Останавливает стандартное поведение формы

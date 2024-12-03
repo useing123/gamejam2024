@@ -976,6 +976,27 @@ FormInfoOk.addEventListener("click", () => {
   FormInfo.classList.remove("form_info_win_on");
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // document.querySelector("form").addEventListener("submit", function(event) {
 //     event.preventDefault();
 
