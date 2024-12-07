@@ -50,7 +50,7 @@
             </div>
             <div class="shortcut_reg shortcut_icons" id="reg_sh">
                 <img src="../img/request.png" alt="registration" class="shortcut_img">
-                <p class="shortcut_names">Оставить заявку</p>
+                <p class="shortcut_names">Отправить проект</p>
             </div>
             <div class="shortcut_awards shortcut_icons" id="awards_sh">
                 <img src="../img/awards.png" alt="awards" class="shortcut_img">
@@ -769,7 +769,7 @@
             </div>
 
             <div class="win_сlose">
-                <div class="text2">
+                <!-- <div class="text2">
                     <h2 class="text1">Регистрация закрыта</h3>
                     <h3 class="text1">Подпишитесь на наш телеграм-канал, чтобы быть в курсе всех событий:</h3>
                     
@@ -777,7 +777,56 @@
                 <div class="tg">
                     <p class="text1"><a href="https://t.me/+MnNWWqSNPLBjNzZi">Телеграм канал</a></p>
                     <img src="../img/qr.jpg" class="qr">
-                </div>
+                </div> -->
+                <!-- <form >
+
+                <table>
+                    <tr>
+                        <td>                    <label>Название команды</label>
+                        </td>
+                        <td>                    <input type="text">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>                    <label>Название проекта</label>
+                        </td>
+                        <td>                    <input type="text">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>                    <label>Архив с исходным кодом проекта                    </label>
+                        </td>
+                        <td>                    <input type="file">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>                    <label>Архив со скомпилированным проектом (Готовой игрой)</label>
+                        </td>
+                        <td>                    <input type="file">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>                    <label>Документ с кратким описанием и скриншотом проекта </label>
+                        </td>
+                        <td>                    <input type="file">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                </table>
+                <button type="submit">Отправить проект</button>
+            </form> -->
+
+                
             </div>
         </div>
 
@@ -1223,7 +1272,7 @@
                         </div>
                         <div class="win_reg  general_win">
                             <img src="../img/request.png" alt="registration">
-                            <p>Registration</p>
+                            <p>Отправить проект</p>
                         </div>
                         <div class="win_awards  general_win">
                             <img src="../img/awards.png" alt="awards">
@@ -1285,7 +1334,7 @@
                         </li>
                         <li class="registration" id="reg"><img src="../img/request.png" alt="registration"
                                 class="prog_list_icons">
-                            <p>Отправить заявку</p>
+                            <p>Отправить проект</p>
                         </li>
                         <li class="awards" id="awards"><img src="../img/awards.png" alt="awards"
                                 class="prog_list_icons">
@@ -1510,13 +1559,13 @@
 
         const today = new Date();
 
-            const timereal = today.getDate(); 
+        const timereal = today.getDate(); 
 
-            if (timereal >= 3) {
+        if (timereal >= 3) {
                 document.getElementById('reg_content').style.display = 'none';
                     
                 document.querySelector('.win_сlose').style.display = 'block';
-            }
+        }
 
 
         document.getElementById('teamRegistrationForm').addEventListener('submit', async function (event) {
