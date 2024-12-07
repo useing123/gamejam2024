@@ -233,7 +233,8 @@ ScheduleShortcut.addEventListener("dblclick", () => {
 RegShortcut.addEventListener("dblclick", () => {
   WinReg.classList.add("win_reg_on");
   WinReg.classList.remove("win_hide");
-  RegWindows.classList.add("desktop_win_registration_on");
+  // RegWindows.classList.add("desktop_win_registration_on");
+  window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSctlKObaFTDiEpniyOpHGxH4yXw_sFk-JSNJjH8uIGqzxt3fQ/viewform';
 });
 AwardsShortcut.addEventListener("dblclick", () => {
   WinAwards.classList.add("win_awards_on");
