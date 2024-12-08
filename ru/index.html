@@ -38,7 +38,7 @@
             </div>
             <div class="shortcut_faq shortcut_icons" id="faq_sh">
                 <img src="../img/faq.png" alt="faq" class="shortcut_img">
-                <p class="shortcut_names">FAQ</p>
+                <p class="shortcut_names">Сдача презентаций</p>
             </div>
             <div class="shortcut_rules shortcut_icons" id="rules_sh">
                 <img src="../img/rules.png" alt="rules" class="shortcut_img">
@@ -195,7 +195,7 @@
                 <div class="win_header" id="move_faq">
                     <div class="win_icon_text">
                         <img src="../img/faq.png" alt="" class="win_header_icon">
-                        <p class="win_header_way">C:/satbayev/dev.hub/faq</p>
+                        <p class="win_header_way">C:/satbayev/dev.hub/presentations</p>
                     </div>
                     <div class="win_control_btns">
                         <img src="../img/min.png" alt="minimize window" class="min_windows_faq">
@@ -204,53 +204,21 @@
                     </div>
                 </div>
                 <div class="win_content" id="faq_content">
-                    <p class="win_content_text text_question" id="question_1">
-                        <span class="show_text_question">+</span>
-                        Возрастные ограничения имеются?
+                    <p class="win_header_way">
+                        Форма для сдачи презентаций проектов:
+
+                        Принимаются презентации в формате pptx, pdf, mp4
+
                     </p>
-                    <p class="win_content_text text_answer" id="question_1_answer">
-                        <span class="show_text_answer">-</span>
-                        Для участия на GameJam 2024, все члены команды должны быть старше 16 лет, для получения приза.
-                        Если вы являетесь школьной командой и вам нет 16 лет, требуется разрешение официальных
-                        представителей и наличие сопроводителя команды старше 16 лет.
-                    </p>
-                    <p class="win_content_text text_question" id="question_2">
-                        <span class="show_text_question">+</span>
-                        У нашей команды совсем нет опыта, что делать?
-                    </p>
-                    <p class="win_content_text text_answer" id="question_2_answer">
-                        <span class="show_text_answer">-</span>
-                        ГеймДжем это отличный способ получить первый опыт, в конце концов, ведь все бывает в первый раз!
-                    </p>
-                    <p class="win_content_text text_question" id="question_3">
-                        <span class="show_text_question">+</span>
-                        Можем ли мы использовать Unity3D/RPG MAker/Game Maker или любой другой игровой движок в
-                        разработке своего проекта?
-                    </p>
-                    <p class="win_content_text text_answer" id="question_3_answer">
-                        <span class="show_text_answer">-</span>
-                        Да, вы можете использовать любой игровой движок, если конечный проект будет
-                        доступен на платформах указанных в правилах ГеймДжема.
-                    </p>
-                    <p class="win_content_text text_question" id="question_4">
-                        <span class="show_text_question">+</span>
-                        Проект обязательно должен соответствовать тематике "Nomad"?
-                    </p>
-                    <p class="win_content_text text_answer" id="question_4_answer">
-                        <span class="show_text_answer">-</span>
-                        Да. Это необходимое ограничение для поощрения вашего творчества.
-                    </p>
-                    <p class="win_content_text text_question" id="question_5">
-                        <span class="show_text_question">+</span>
-                        Нам нужно приносить собственную технику (Ноутбуки, граф. планшеты и т.д.)?
-                    </p>
-                    <p class="win_content_text text_answer" id="question_5_answer">
-                        <span class="show_text_answer">-</span>
-                        Да, на фестиваль «Nomad Game Jam 2024» необходимо прийти со своей техникой. Формат BYOD (bring
-                        your
-                        own device).
-                    </p>
+                    <button id="submitButton" onclick="redirectToForm()">Перейти к форме</button>
                 </div>
+                
+                <script>
+                    function redirectToForm() {
+                        window.location.href = "https://forms.gle/CmQt8TofkNDstiB76";
+                    }
+                </script>
+                
                 <div class="win_footer" id="faq_footer">
                     <div class="win_footer_line long_line"></div>
                     <div class="short_lines">
@@ -826,7 +794,7 @@
                 <button type="submit">Сдача проекта</button>
             </form> -->
 
-                
+
             </div>
         </div>
 
@@ -1252,7 +1220,7 @@
                         </div>
                         <div class="win_faq  general_win">
                             <img src="../img/faq.png" alt="faq">
-                            <p>FAQ</p>
+                            <p>Сдача презентаций</p>
                         </div>
                         <div class="win_sponsors  general_win">
                             <img src="../img/coin.png" alt="sponsors">
@@ -1315,7 +1283,7 @@
                             <p>О нас</p>
                         </li>
                         <li class="faq" id="faq"><img src="../img/faq.png" alt="faq" class="prog_list_icons">
-                            <p>FAQ</p>
+                            <p>Сдача презентаций</p>
                         </li>
                         <li class="sponsor" id="sponsor"><img src="../img/coin.png" alt="sponsor"
                                 class="prog_list_icons">
@@ -1559,12 +1527,12 @@
 
         const today = new Date();
 
-        const timereal = today.getDate(); 
+        const timereal = today.getDate();
 
         if (timereal >= 3) {
-                document.getElementById('reg_content').style.display = 'none';
-                    
-                document.querySelector('.win_сlose').style.display = 'block';
+            document.getElementById('reg_content').style.display = 'none';
+
+            document.querySelector('.win_сlose').style.display = 'block';
         }
 
 
@@ -1584,9 +1552,9 @@
                 urlEncodedData.append(key, value);
             });
 
-            
 
-            
+
+
 
             try {
                 const response = await fetch("https://script.google.com/macros/s/AKfycbyJCoFZXS4IW7ZarX54B1rCJdaJtG30oYD39iRTz-oIMAx4P4PNIhMEKuBV0tuMn2kH/exec", {
@@ -1611,7 +1579,7 @@
                 alert("Ошибка сети. Пожалуйста, проверьте ваше соединение и попробуйте снова.");
             }
 
-            
+
         });
     </script>
 </body>
