@@ -3,7 +3,7 @@ document.body.onload = function(){
         // Скрываем текст и показываем загрузку
         document.querySelector('.text').style.display = 'none';
         document.querySelector('.loader').style.display = 'block';
-    }, 1500); // Через 1 секунду
+    }, ); // Через 1 секунду
 
     setTimeout(function() {
         document.getElementById("page_preloader").style.display = "none";
