@@ -24,6 +24,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../style/main.css">
     <title>Game Jam SU & theHub</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/snowfall-js@1.0.5/snowfall.min.js"></script>
 </head>
 
 <body>
@@ -53,8 +55,8 @@
                 <p class="shortcut_names">Сдача проекта</p>
             </div>
             <div class="shortcut_awards shortcut_icons" id="awards_sh">
-                <img src="../img/awards.png" alt="awards" class="shortcut_img">
-                <p class="shortcut_names">Номинации</p>
+                <img src="../img/games.png" alt="awards" class="shortcut_img">
+                <p class="shortcut_names">Games</p>
             </div>
             <div class="shortcut_sponsors shortcut_icons" id="sponsor_sh">
                 <img src="../img/coin.png" alt="sponsor" class="shortcut_img">
@@ -747,30 +749,610 @@
                 </div>
             </div>
             <div class="win_content" id="awards_content">
-                <p class="win_content_text">
-                    Составом жюри будут определены три лучших проекта фестиваля.
-                </p>
-                <ul class="win_content_list">
-                    <li><span>1 место — 1 000 000 тенге</span></li>
-                    <li><span>2 место — 700 000 тенге</span></li>
-                    <li><span>3 место — 500 000 тенге</span></li>
-                </ul>
-                <p class="win_content_text">
-                    За каждую номинацию по 100 000 тенге:
-                </p>
-                <ul class="win_content_list">
-                    <li><span>Лучшая образовательная игра (Education)</span></li>
-                    <li><span>Лучший школьный проект (Best Junior Team)</span></li>
-                    <li><span>Лучший сценарий (Best Script)</span></li>
-                    <li><span>Инновация (Innovation)</span></li>
-                    <li><span>Лучший дизайн (Best Design)</span></li>
-                </ul>
-                <p class="win_content_text">
-                    Лучшая команда получит стажировку в независимую мультиплатформенную интерактивную развлекательную
-                    студию “ RedPad Games”.
-                    Победители получат ценные призы и подарки от спонсоров. При этом один проект не может стать
-                    победителем сразу во множестве номинаций!
-                </p>
+                <div class="gamesMin">
+                    <table>
+                        <tr>
+                            <div class="row">
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tzFV4tkFgJNBTQnAENkLjAS6GvmSUAGA?usp=drive_link">
+                                        <img src="../img/first.png">
+                                        <p>The Best Juniors</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ogi6k6qkoB5Z1dNf5eLuIvVkOihaKmuJ?usp=drive_link">
+                                        <img src="../img/second.png">
+                                    <p>IT College</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1OgE_JuHgzmCcaL_YTBlsQTXpFiiLUCQY?usp=drive_link">
+                                        <img src="../img/third.png">
+                                        <p>Murakami Cult</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1SeQkMjw2KsjtTyCK5eo6to3-hhvkCQPu?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Junior Team»</p>
+                                        <p>ERAIS48</p>
+                                    </a>
+                                </div>
+        
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gIlEYzzS5RNTDrEAq1yALdP7Tc1Br5Nr?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Innovation»</p>
+                                        <p>Кашевары</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1PDjxou8t4UuTY0x6I4-BwhCdNhXd02eF?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Design»</p>
+                                        <p>AITU Boys Band</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1cpzObT7LO3WDG563Q75oIvhrNnsak3XD?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Script»</p>
+                                        <p>Little Stars</p>
+                                    </a>
+                                </div>
+                                
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1jC3JMlmZ2ZQNVcGqQFc6pKg7m5X13FgB?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Education»</p>
+                                        <p>Rikar GS</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1zEK8WQ4yjH44f5NQeAC8awEbhzTFN_ks?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>32-Bit</p>
+                                    </a>
+                                </div>
+                            </div>                                                
+                        </tr>
+    
+                        <tr>
+                            <div class="row">                           
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gjfO6WwGdTirwP1g2lkn-qpYd6_RfRVQ?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Кибер Странники</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/16RvGxsU3O_cuYxkhXKmQxWAq9TF6eV48?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Araba Games</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ZRmuYnEzRvRGzACTDVkQo7SMZD7_FdmE?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Arise</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/17W8-ashcx1Y3RLwGtDWYZOS8NsfdfZ6q?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Bread2</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1bB2dJlLkgCRZJTXfaJ5soDiJCmKHAV6t?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Bruhality</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1_krkleQkAwLJl7sstbK15_La4jyPQZwo?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Cyber GANG KSTU</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1Llz67Fw7cm37IxIK9ma4C4ut4ybk4SnI?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>DreamPixel</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1eSxekbUABm4mqvbjPMSpL1pzlrEgwhxr?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>DreamWeavers</p>
+                                    </a>
+                                </div> 
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1b577f5BtrgvA1st6Q4qg5i1NTWQKYQPU?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Esoft</p>
+                                    </a>
+                                </div> 
+                            </div>                       
+                        </tr>
+    
+                        <tr>
+                            <div class="row">                              
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tu67j9mGCvYR-HeeKoch2_Zc9XU5G0QJ?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>GameOn</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1w2SFqctxGFpO_gqiDIH690eFmnw9sSbK?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Grand_Hunters</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1J5NUgBu8j9ZluCAJECpopiWCyepL6xPc?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Hierophant</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1oAmX4MkAXyl5yoFPi1sMUpLcI3feStpP?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p> INTC</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1-7mg-14KEdow7BtxJHJ2BgOnWhuJwnj-?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>ITICGame</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1DKJUgtumrXuSShHnG9dVH8ZbpU949HGp?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Kenzhe</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1-QJVxpKTk4Lq4FU0rZWOqAivFZndiPlC?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Lavishers</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1y16q8cGKYBYJnqkuFV6Ig2ypxZf-_RmP?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Mad Nomad</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1zP2GiZquA4iedt_ebzAcaojcK1LsrwW6?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Makko</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </tr>
+    
+                        <tr>
+                            <div class="row">
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gKMyzteTOcd46rp4UoAR3CD_COdOuTBz?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>MiraMiraFuruFuru</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1QcfvL-keu4lF_RG8RuVw_CsNwIE_1jBz?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Nocturne Club SDU</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/14MQ_6tQCn_yXSmVdtpA301WOnd5qjw-4?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Nomads of Auezov</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/11_UwUZyoH8kh454YUC3aM4ttwvA5itJh?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SanteriaGames</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/135oM2ZqvWdIE_Pq6NfGmAEEXY_YJDt28?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Sarcon</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/15OItmlf1DHxaTMDCthiZjLb_Zr5pNyiM?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Slot Machine Wizzard</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/18iySZv-cD5dMUaWFnOzqFa6WAyh0oiaK?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SoftLock</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1bkzH75XF9qZkkmU18Bu9JtJDdg-DFnsf?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TechFusion</p>
+                                    </a>
+                                </div> 
+                            </div>
+                        </tr>
+    
+                        <tr>
+                            <div class="row">
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ZQ7zCTsqO_4OWWezRC18Dg56dIXo7pqW?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SUPERChillGuys</p>
+                                    </a>
+                                </div> 
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tzFV4tkFgJNBTQnAENkLjAS6GvmSUAGA?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TheBestJuniors</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1aZO2R6p_lddNKld-frNSPABM90XoWCCm?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TimeKeepers</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1nPXD1kGLAeRYiKYEqQYHEq5hOjaXaH33?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>WeMakeYouPlay</p>
+                                    </a>
+                                </div> 
+                            </div>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="gamesLarge">
+                    <table>
+                        <tr>
+                            <div class="row">
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tzFV4tkFgJNBTQnAENkLjAS6GvmSUAGA?usp=drive_link">
+                                        <img src="../img/first.png">
+                                        <p>The Best Juniors</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ogi6k6qkoB5Z1dNf5eLuIvVkOihaKmuJ?usp=drive_link">
+                                        <img src="../img/second.png">
+                                    <p>IT College</p>
+                                    </a>
+                                    
+                                </div>
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1OgE_JuHgzmCcaL_YTBlsQTXpFiiLUCQY?usp=drive_link">
+                                        <img src="../img/third.png">
+                                        <p>Murakami Cult</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1SeQkMjw2KsjtTyCK5eo6to3-hhvkCQPu?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Junior Team»</p>
+                                        <p>ERAIS48</p>
+                                    </a>
+                                </div>
+        
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gIlEYzzS5RNTDrEAq1yALdP7Tc1Br5Nr?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Innovation»</p>
+                                        <p>Кашевары</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1PDjxou8t4UuTY0x6I4-BwhCdNhXd02eF?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Design»</p>
+                                        <p>AITU Boys Band</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1cpzObT7LO3WDG563Q75oIvhrNnsak3XD?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Best Script»</p>
+                                        <p>Little Stars</p>
+                                    </a>
+                                </div>
+                                
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1jC3JMlmZ2ZQNVcGqQFc6pKg7m5X13FgB?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>«Education»</p>
+                                        <p>Rikar GS</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1zEK8WQ4yjH44f5NQeAC8awEbhzTFN_ks?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>32-Bit</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gjfO6WwGdTirwP1g2lkn-qpYd6_RfRVQ?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Кибер Странники</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/16RvGxsU3O_cuYxkhXKmQxWAq9TF6eV48?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Araba Games</p>
+                                    </a>
+                                </div>
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ZRmuYnEzRvRGzACTDVkQo7SMZD7_FdmE?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Arise</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/17W8-ashcx1Y3RLwGtDWYZOS8NsfdfZ6q?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Bread2</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1bB2dJlLkgCRZJTXfaJ5soDiJCmKHAV6t?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Bruhality</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1_krkleQkAwLJl7sstbK15_La4jyPQZwo?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Cyber GANG KSTU</p>
+                                    </a>
+                                </div>  
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1Llz67Fw7cm37IxIK9ma4C4ut4ybk4SnI?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>DreamPixel</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1eSxekbUABm4mqvbjPMSpL1pzlrEgwhxr?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>DreamWeavers</p>
+                                    </a>
+                                </div> 
+        
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1b577f5BtrgvA1st6Q4qg5i1NTWQKYQPU?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Esoft</p>
+                                    </a>
+                                </div> 
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tu67j9mGCvYR-HeeKoch2_Zc9XU5G0QJ?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>GameOn</p>
+                                    </a>
+                                </div>
+                            </div>                                                
+                        </tr>
+    
+                        <tr>
+                            <div class="row">     
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1w2SFqctxGFpO_gqiDIH690eFmnw9sSbK?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Grand_Hunters</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1J5NUgBu8j9ZluCAJECpopiWCyepL6xPc?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Hierophant</p>
+                                    </a>
+                                </div>                         
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1oAmX4MkAXyl5yoFPi1sMUpLcI3feStpP?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p> INTC</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1-7mg-14KEdow7BtxJHJ2BgOnWhuJwnj-?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>ITICGame</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1DKJUgtumrXuSShHnG9dVH8ZbpU949HGp?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Kenzhe</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1-QJVxpKTk4Lq4FU0rZWOqAivFZndiPlC?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Lavishers</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1y16q8cGKYBYJnqkuFV6Ig2ypxZf-_RmP?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Mad Nomad</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1zP2GiZquA4iedt_ebzAcaojcK1LsrwW6?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Makko</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1gKMyzteTOcd46rp4UoAR3CD_COdOuTBz?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>MiraMiraFuruFuru</p>
+                                    </a>
+                                </div>
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1QcfvL-keu4lF_RG8RuVw_CsNwIE_1jBz?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Nocturne Club SDU</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/14MQ_6tQCn_yXSmVdtpA301WOnd5qjw-4?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Nomads of Auezov</p>
+                                    </a>
+                                </div>
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/11_UwUZyoH8kh454YUC3aM4ttwvA5itJh?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SanteriaGames</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/135oM2ZqvWdIE_Pq6NfGmAEEXY_YJDt28?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Sarcon</p>
+                                    </a>
+                                </div>  
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/15OItmlf1DHxaTMDCthiZjLb_Zr5pNyiM?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>Slot Machine Wizzard</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/18iySZv-cD5dMUaWFnOzqFa6WAyh0oiaK?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SoftLock</p>
+                                    </a>
+                                </div> 
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1bkzH75XF9qZkkmU18Bu9JtJDdg-DFnsf?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TechFusion</p>
+                                    </a>
+                                </div> 
+
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1ZQ7zCTsqO_4OWWezRC18Dg56dIXo7pqW?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>SUPERChillGuys</p>
+                                    </a>
+                                </div> 
+                            </div>
+                        </tr>
+
+                        <tr>
+                            <div class="row">
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1tzFV4tkFgJNBTQnAENkLjAS6GvmSUAGA?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TheBestJuniors</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1aZO2R6p_lddNKld-frNSPABM90XoWCCm?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>TimeKeepers</p>
+                                    </a>
+                                </div> 
+    
+                                <div class="project">
+                                    <a href="https://drive.google.com/drive/folders/1nPXD1kGLAeRYiKYEqQYHEq5hOjaXaH33?usp=drive_link">
+                                        <img src="../img/unity.png">
+                                        <p>WeMakeYouPlay</p>
+                                    </a>
+                                </div> 
+                            </div>
+                        </tr>
+    
+                    </table>
+                </div>
+                
+                
+
+
+
+
             </div>
             <div class="win_footer" id="awards_footer">
                 <div class="win_footer_line long_line"></div>
@@ -907,7 +1489,8 @@
                         <span class="show_text_answer">-</span>
                         Сертификат в 500 000 тенге- Команда «Murakami Cult» - Funcode и De Montfort University Kazakhstan г.Алматы
                     </p>
-                    <h2>Номинации</h2>
+                    <h2>Номинации
+                    </h2>
                     <p class="win_content_text text_question" id="game_4">
                         <span class="show_text_question">+</span>
                         «Best Junior Team»
@@ -1236,8 +1819,8 @@
                             <p>Сдача проекта</p>
                         </div>
                         <div class="win_awards  general_win">
-                            <img src="../img/awards.png" alt="awards">
-                            <p>Awards</p>
+                            <img src="../img/games.png" alt="awards">
+                            <p>Games</p>
                         </div>
                         <div class="win_games  general_win">
                             <img src="../img/nomad games.png" alt="games">
@@ -1297,9 +1880,9 @@
                                 class="prog_list_icons">
                             <p>Сдача проекта</p>
                         </li>
-                        <li class="awards" id="awards"><img src="../img/awards.png" alt="awards"
+                        <li class="awards" id="awards"><img src="../img/games.png" alt="awards"
                                 class="prog_list_icons">
-                            <p>Номинации</p>
+                            <p>Games</p>
                         </li>
                         <li class="games" id="games"><img src="../img/nomad games.png" alt="games"
                                 class="prog_list_icons">
@@ -1416,7 +1999,43 @@
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
+    <script src="../snowfall.js"></script>
     <script>
+
+
+$(document).ready(function(){
+        $(document).snowfall({image :"../img/snow1.png", minSize: 10, maxSize:20});
+    });
+
+function updateGameDisplay(game) {
+      const gameSize = game.getBoundingClientRect();
+      console.log('Ширина:', gameSize.width, 'Высота:', gameSize.height);
+
+      if (gameSize.width > 720) {
+        game.querySelector('.gamesLarge').style.display = 'block';
+        game.querySelector('.gamesMin').style.display = 'none';
+      } else {
+        game.querySelector('.gamesLarge').style.display = 'none';
+        game.querySelector('.gamesMin').style.display = 'block';
+      }
+    }
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        updateGameDisplay(entry.target);
+      }
+    });
+
+    const gameElement = document.querySelector('.desktop_win_awards');
+
+    resizeObserver.observe(gameElement);
+
+    window.addEventListener('load', function() {
+  updateGameDisplay();  
+});
+
+
+
         const gameFirst = document.getElementById('game_1');
         const gameFirstA = document.getElementById('game_1_answer');
         gameFirst.addEventListener('click', () => {
