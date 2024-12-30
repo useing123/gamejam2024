@@ -24,6 +24,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../style/main.css">
     <title>Game Jam SU & theHub</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/snowfall-js@1.0.5/snowfall.min.js"></script>
 </head>
 
 <body>
@@ -1997,7 +1999,13 @@
     <script src="../js/main.js"></script>
     <script src="../js/object_move.js"></script>
     <script src="../js/mobile_obj_move.js"></script>
+    <script src="../snowfall.js"></script>
     <script>
+
+
+$(document).ready(function(){
+        $(document).snowfall({image :"../img/snow1.png", minSize: 10, maxSize:20});
+    });
 
 function updateGameDisplay(game) {
       const gameSize = game.getBoundingClientRect();
